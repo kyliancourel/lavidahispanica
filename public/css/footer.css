@@ -1,0 +1,84 @@
+/* footer.css */
+footer {
+    background-color: #1e2a47; /* Bleu sombre */
+    color: #ffffff; /* Texte blanc */
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #f4a261; /* Couleur orange */
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section a {
+    color: #ffffff; /* Lien blanc */
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+    color: #f4a261; /* Couleur orange au survol */
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    margin: 10px 0;
+}
+
+.social-links i {
+    margin-right: 10px;
+}
+
+.social-links a {
+    color: #ffffff; /* Lien social blanc */
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #f4a261; /* Orange au survol */
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #bbbbbb; /* Texte gris clair */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

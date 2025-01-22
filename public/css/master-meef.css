@@ -1,0 +1,114 @@
+ /* Variables globales pour les couleurs et styles */
+ :root {
+    --primary-color: #17a2b8; /* Couleur bleue distinctive */
+    --secondary-color: #138496; /* Bleu foncé pour les accents */
+    --text-color: #333;
+    --background-color: #f8f9fa;
+    --footer-bg-color: #343a40;
+    --footer-text-color: white;
+}
+
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Section Hero */
+.hero-section {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 30px;
+    border-bottom: 5px solid var(--secondary-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section img {
+    width: 180px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Image de construction */
+.construction-image {
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.construction-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Message de construction */
+.content-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.content-section p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .construction-image {
+        margin: 20px auto;
+    }
+}

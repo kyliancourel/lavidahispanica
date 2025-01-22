@@ -1,0 +1,83 @@
+/* Navbar styles */
+.navbar {
+    background: linear-gradient(90deg, #dc3545, #6c757d);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    background-color: white;
+    padding: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand:hover {
+    color: #f8f9fa;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffd700;
+    background-color: rgba(255, 215, 0, 0.2);
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+}
+
+/* Améliorations des couleurs pour le menu déroulant */
+.nav-item .dropdown-menu {
+    background-color: #f1c40f; /* Une teinte dorée plus douce */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-item {
+    color: #333; /* Couleur de texte plus sombre pour un meilleur contraste */
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f39c12; /* Un ton plus doré pour le survol */
+    color: #fff;
+}
+
+/* Généralement Responsive pour les écrans inférieurs à 992px */
+@media (max-width: 1116px) {
+    .navbar {
+        padding: 0.8rem 1rem;
+    }
+
+    .navbar-nav {
+        background-color: transparent;
+        padding: 0.5rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+}

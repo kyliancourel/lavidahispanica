@@ -1,0 +1,123 @@
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(145deg, #dc3545, #c82333);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    border-bottom: 5px solid #b21f2d;
+    margin-bottom: 50px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hero-section img {
+    width: 160px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Form Section */
+.form-section, .avis-section {
+    margin: 40px auto;
+    max-width: 900px;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1), inset 0 -2px 12px rgba(255, 255, 255, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-section:hover, .avis-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 25px rgba(0, 0, 0, 0.15), inset 0 -2px 18px rgba(255, 255, 255, 0.8);
+}
+
+/* Avis Section */
+.avis .nom {
+    font-weight: bold;
+    color: #004080;
+    font-size: 1.2rem;
+}
+
+.delete-btn {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete-btn:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+/* Form input and textarea */
+.form-control {
+    border-radius: 10px;
+    padding: 14px;
+    border: 1px solid #cce5ff;
+    background-color: #f9fcff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #0073e6;
+    box-shadow: 0 0 8px rgba(0, 115, 230, 0.6);
+}
+
+/* Button */
+.btn-primary {
+    background-color: #0073e6;
+    border-color: #0073e6;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #005bb5;
+    border-color: #005bb5;
+    transform: scale(1.05);
+}
+
+/* Style pour les étoiles */
+#rating i {
+    color: #e0e0e0; /* Gris clair pour les étoiles non sélectionnées */
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#rating i.text-warning {
+    color: #ffc107; /* Jaune pour les étoiles sélectionnées */
+    transform: scale(1.2); /* Zoom des étoiles sélectionnées */
+}

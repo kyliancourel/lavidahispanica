@@ -1,0 +1,17 @@
+/* Classe pour le fade-out */
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Style global pour la page */
+body {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+/* Ajoutez un léger effet de fondu au survol des liens */
+a:hover {
+    /* background-color: #0056b3; */
+    transition: background-color 0.3s ease;
+}

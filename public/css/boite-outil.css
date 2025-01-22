@@ -1,0 +1,187 @@
+/* Boîte à outils - Styles spécifiques à la page */
+
+/* Section Héro */
+.hero-section {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    border-bottom: 5px solid #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.hero-section img {
+    width: 180px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+/* Conteneur Principal */
+.container {
+    padding: 50px 20px;
+}
+
+/* Section Contenu */
+.content-section {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: box-shadow 0.3s ease;
+}
+
+.content-section:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.content-section img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.content-section h2 {
+    font-size: 2.2rem;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content-section h3 {
+    font-size: 1.8rem;
+    color: #005bb5;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.content-section h4 {
+    font-size: 1.5rem;
+    color: #0056b3;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.content-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.content-section ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Styles spécifiques pour les fichiers */
+#file-1, #file-2 {
+    background-color: #d0e8ff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#file-2 {
+    background-color: #ffebd8;
+}
+
+/* Section Book avec image et texte à droite */
+.book-section-container {
+    display: flex;
+    align-items: center; /* Aligne l'image et le texte verticalement */
+    justify-content: space-between; /* Espace entre l'image et le texte */
+    margin-bottom: 20px; /* Espacement inférieur */
+    text-align: justify; /* Justifie le texte */
+}
+
+.book-section-container img {
+    width: 180px; /* Taille de l'image */
+    height: auto;
+    margin-right: 20px; /* Espacement entre l'image et le texte */
+    border-radius: 8px;
+    text-align: justify; /* Justifie le texte */
+}
+
+.book-section {
+    font-size: 1.2rem;
+    max-width: 60%; /* Limite la largeur du texte */
+    font-weight: 300;
+    line-height: 1.6;
+    text-align: justify; /* Justifie le texte */
+}
+
+/* Conteneur pour les boutons Buy */
+.buy-buttons-container {
+    display: flex;
+    justify-content: center; /* Centre les boutons */
+    gap: 15px; /* Espacement modéré entre les boutons */
+}
+/* Buy Button */
+.buy-button a {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), inset 0 -3px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.buy-button a:hover {
+    background: linear-gradient(135deg, #0056b3, #007bff);
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), inset 0 -4px 8px rgba(0, 0, 0, 0.3);
+    color: #ffebd8;
+}
+
+.buy-button a:active {
+    background: linear-gradient(135deg, #003f8a, #0056b3);
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), inset 0 -2px 4px rgba(0, 0, 0, 0.2);
+    color: #ffebd8;
+}
+
+/* Réglages Responsives */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .content-section {
+        padding: 20px;
+    }
+
+    .buy-button a {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

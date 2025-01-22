@@ -1,0 +1,151 @@
+/* Section générale */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    background: linear-gradient(to right, #004080, #0073e6);
+    color: white;
+    padding: 80px 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.hero-section img {
+    width: 180px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    max-width: 600px;
+    font-style: italic;
+}
+
+/* Section Title */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px 0 20px;
+    color: #004080;
+    border-bottom: 3px solid #0073e6;
+    display: inline-block;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Units and Semesters */
+.unit-section {
+    margin: 20px 0;
+    padding: 25px;
+    background: linear-gradient(145deg, #f0f8ff, #ffffff);
+    border: 1px solid #cce5ff;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1), inset 0 -2px 10px rgba(255, 255, 255, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.unit-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15), inset 0 -2px 15px rgba(255, 255, 255, 0.7);
+}
+
+.unit-section h4 {
+    font-size: 1.6rem;
+    color: #004080;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Liste des éléments de l'unité */
+.unit-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.unit-section ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 15px 0;
+    background-color: #f0f8ff;
+    border: 2px solid #cce5ff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Espacement entre "UE1" et la description */
+.unit-section ul li strong {
+    font-weight: bold;
+    color: #00509e;
+    font-size: 1.2rem;
+    margin-right: 20px; /* Espacement entre "UE1" et la description */
+    flex-shrink: 0; /* Empêche le titre de se réduire */
+}
+
+/* Ajuster la description pour avoir une belle présentation */
+.unit-section ul li span {
+    flex-grow: 1; /* La description occupe l'espace restant */
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* L'icône avant chaque élément de la liste */
+.unit-section ul li::before {
+    content: "\f0da";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 15px;
+    color: #0073e6;
+    font-size: 1.5rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .unit-section h4 {
+        font-size: 1.4rem;
+    }
+
+    .unit-section ul li {
+        font-size: 0.9rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

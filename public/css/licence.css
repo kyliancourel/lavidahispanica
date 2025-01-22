@@ -1,0 +1,109 @@
+/* Hero Section for Licence Page */
+.hero-section {
+    background-color: #6c757d; /* Différencier le programme de licence */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    border-bottom: 5px solid #495057;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.hero-section img {
+    width: 180px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Programme Section (Licence) */
+.programme-section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.programme-section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.programme-section h4 {
+    font-size: 1.4rem;
+    color: #495057;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.programme-section p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.programme-section .btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.programme-section .btn:hover {
+    background-color: #495057;
+    color: #f8f9fa;
+}
+
+/* General Styling for Licence Page */
+.container {
+    padding: 50px 20px;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    color: #6c757d;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .programme-section {
+        margin-bottom: 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+}

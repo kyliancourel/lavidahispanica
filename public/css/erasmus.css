@@ -1,0 +1,129 @@
+/* Variables pour une gestion facile des couleurs */
+:root {
+    --primary-color: #d8a909; /* Jaune moutarde pour Erasmus+ */
+    --hover-color: #b8860b;   /* Brun doré */
+    --text-color: #333;       /* Couleur principale du texte */
+    --background-color: #f8f9fa; /* Arrière-plan clair */
+    --footer-bg-color: #343a40;
+    --footer-text-color: white;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero-section-erasmus {
+    background-color: var(--primary-color); /* Jaune moutarde pour Erasmus+ */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    border-bottom: 5px solid var(--hover-color); /* Brun doré */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.hero-section-erasmus img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: white; /* Fond blanc pour mettre en valeur le logo */
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section-erasmus h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-section-erasmus p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Content Section */
+.content-section-erasmus {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.content-section-erasmus h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content-section-erasmus p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.content-section-erasmus ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content-section-erasmus li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.content-section-erasmus li strong {
+    color: var(--primary-color);
+}
+
+.content-section-erasmus a.btn {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.content-section-erasmus a.btn:hover {
+    background-color: var(--hover-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section-erasmus h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section-erasmus p {
+        font-size: 1rem;
+    }
+
+    .content-section-erasmus {
+        padding: 20px;
+    }
+}
