@@ -3,6 +3,8 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const fs = require('fs');
 const path = require('path');
+const https = require('https'); // Pour effectuer des requêtes https vers Google Drive
+const http = require('http');  // Utilisé pour http également
 
 const app = express();
 const port = 3000;
@@ -78,6 +80,19 @@ app.delete('/avis', (req, res) => {
     // Réinitialiser les avis dans le fichier
     saveAvisToFile([]);
     res.status(200).json({ message: 'Tous les avis ont été supprimés avec succès.' });
+});
+
+// Endpoint pour récupérer la vidéo depuis Google Drive
+app.get('/video/:id', (req, res) => {
+    const fileId = req.params.id;
+    const url = `https://drive.google.com/uc?export=download&id=${fileId}`; // URL de téléchargement direct
+
+    https.get(url, (fileRes) => {
+        res.setHeader('Content-Type', 'video/mp4');
+        fileRes.pipe(res);
+    }).on('error', (err) => {
+        res.status(500).send('Erreur de récupération de la vidéo');
+    });
 });
 
 // Démarrer le serveur
