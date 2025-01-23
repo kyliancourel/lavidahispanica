@@ -82,19 +82,6 @@ app.delete('/avis', (req, res) => {
     res.status(200).json({ message: 'Tous les avis ont été supprimés avec succès.' });
 });
 
-// Endpoint pour récupérer la vidéo depuis Google Drive
-app.get('/video/:id', (req, res) => {
-    const fileId = req.params.id;
-    const url = `https://drive.google.com/uc?export=download&id=${fileId}`; // URL de téléchargement direct
-
-    https.get(url, (fileRes) => {
-        res.setHeader('Content-Type', 'video/mp4');
-        fileRes.pipe(res);
-    }).on('error', (err) => {
-        res.status(500).send('Erreur de récupération de la vidéo');
-    });
-});
-
 // Démarrer le serveur
 app.listen(port, () => {
     console.log(`Serveur démarré sur http://localhost:${port}`);
