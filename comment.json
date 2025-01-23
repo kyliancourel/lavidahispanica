@@ -1,1 +1,19 @@
-[]
+[
+    {
+      "id": 1,
+      "prenom": "Alice",
+      "nom": "Dupont",
+      "message": "Très bon service, je recommande !",
+      "rating": 5,
+      "date": "2025-01-23T12:00:00"
+    },
+    {
+      "id": 2,
+      "prenom": "Bob",
+      "nom": "Martin",
+      "message": "Le produit est correct, mais livraison trop lente.",
+      "rating": 3,
+      "date": "2025-01-22T15:30:00"
+    }
+  ]
+  
