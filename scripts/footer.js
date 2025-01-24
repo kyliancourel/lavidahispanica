@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("../pages/footer.html")
+    fetch("https://kyliancourel.github.io/La-Vida-Hispanica/pages/footer.html")
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Erreur lors du chargement de footer.html: ${response.statusText}`);

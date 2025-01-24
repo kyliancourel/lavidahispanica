@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("../pages/navbar.html")
+    fetch("https://kyliancourel.github.io/La-Vida-Hispanica/pages/navbar.html")
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Erreur lors du chargement de navbar.html: ${response.statusText}`);
