@@ -1,5 +1,6 @@
-// Adaptez les chemins pour un fichier à la racine ou dans un sous-dossier
-const footerPath = location.pathname.includes('pages/') ? '../pages/footer.html' : 'pages/footer.html';
+// Détecte la profondeur dans l'arborescence et ajuste le chemin vers footer.html
+const depth = location.pathname.split('/').length - 2; // -2 pour exclure le domaine et le fichier lui-même
+const footerPath = `${'../'.repeat(depth)}pages/footer.html`;
 
 fetch(footerPath)
   .then(response => {

@@ -1,5 +1,6 @@
-// Adaptez les chemins pour un fichier à la racine ou dans un sous-dossier
-const navbarPath = location.pathname.includes('pages/') ? '../pages/navbar.html' : 'pages/navbar.html';
+// Détecte la profondeur dans l'arborescence et ajuste le chemin vers navbar.html
+const depth = location.pathname.split('/').length - 2; // -2 pour exclure le domaine et le fichier lui-même
+const navbarPath = `${'../'.repeat(depth)}pages/navbar.html`;
 
 fetch(navbarPath)
   .then(response => {
