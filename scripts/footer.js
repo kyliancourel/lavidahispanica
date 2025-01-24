@@ -1,5 +1,5 @@
 // Chargement du footer
-fetch('/La-Vida-Hispanica/pages/footer.html') // Utilisation du chemin correct pour GitHub Pages
+fetch('/lavidahispanica/pages/footer.html')  // Ajout du préfixe '/lavidahispanica'
   .then(response => {
     if (!response.ok) throw new Error(`Erreur ${response.status}: ${response.statusText}`);
     return response.text();

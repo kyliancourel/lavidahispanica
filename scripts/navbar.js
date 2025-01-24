@@ -1,5 +1,5 @@
 // Chargement de la navbar
-fetch('/La-Vida-Hispanica/pages/navbar.html') // Utilisation du chemin correct pour GitHub Pages
+fetch('/lavidahispanica/pages/navbar.html')  // Ajout du préfixe '/lavidahispanica'
   .then(response => {
     if (!response.ok) throw new Error(`Erreur ${response.status}: ${response.statusText}`);
     return response.text();
