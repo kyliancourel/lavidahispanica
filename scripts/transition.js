@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Ajout dynamique de la feuille de style transition.css
+    const linkElement = document.createElement('link');
+    linkElement.rel = 'stylesheet';
+    linkElement.href = 'https://kyliancourel.github.io/lavidahispanica/styles/transition.css'; // Chemin du fichier CSS
+    document.head.appendChild(linkElement);
+
     // Ajoute la classe fade-in au chargement
     document.body.classList.add('fade-in');
 

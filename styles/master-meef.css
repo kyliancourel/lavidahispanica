@@ -85,19 +85,6 @@ body {
     color: #555;
 }
 
-/* Footer */
-footer {
-    background-color: var(--footer-bg-color);
-    color: var(--footer-text-color);
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-footer p {
-    margin: 0;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-section h1 {

@@ -99,20 +99,6 @@ body {
     background-color: var(--hover-color);
 }
 
-/* Footer */
-footer {
-    background-color: var(--footer-bg-color);
-    color: var(--footer-text-color);
-    padding: 30px 20px;
-    text-align: center;
-    margin-top: 50px;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-}
-
-footer p {
-    margin: 0;
-}
-
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .hero-section-erasmus h1 {

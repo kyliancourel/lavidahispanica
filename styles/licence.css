@@ -1,6 +1,6 @@
 /* Hero Section for Licence Page */
 .hero-section {
-    background-color: #6c757d; /* Différencier le programme de licence */
+    background-color: #6c757d; /* Couleur différenciant le programme de licence */
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -35,7 +35,7 @@
 /* Programme Section (Licence) */
 .programme-section {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 12px; /* Ajout d'un arrondi plus doux */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 25px;
     margin-bottom: 20px;
@@ -68,8 +68,8 @@
     border: none;
     font-size: 1rem;
     padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border-radius: 8px; /* Arrondi plus prononcé pour un style moderne */
+    transition: background-color 0.3s ease, transform 0.3s ease;
     display: block;
     text-align: center;
     margin: 0 auto;
@@ -78,6 +78,7 @@
 .programme-section .btn:hover {
     background-color: #495057;
     color: #f8f9fa;
+    transform: translateY(-3px); /* Ajout d'une légère animation au survol */
 }
 
 /* General Styling for Licence Page */
@@ -105,5 +106,31 @@
 
     .hero-section p {
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        padding: 80px 15px;
+    }
+
+    .programme-section {
+        padding: 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-section p {
+        font-size: 0.95rem;
+    }
+
+    .programme-section h4 {
+        font-size: 1.2rem;
+    }
+
+    .programme-section p {
+        font-size: 0.9rem;
     }
 }
