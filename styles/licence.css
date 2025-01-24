@@ -1,10 +1,10 @@
 /* Hero Section for Licence Page */
 .hero-section {
-    background-color: #6c757d; /* Couleur différenciant le programme de licence */
+    background-color: #007bff; /* Couleur bleue pour la section */
     color: white;
     text-align: center;
     padding: 100px 20px;
-    border-bottom: 5px solid #495057;
+    border-bottom: 5px solid #0056b3; /* Bordure bleue plus foncée */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 50px;
 }
@@ -63,7 +63,7 @@
 }
 
 .programme-section .btn {
-    background-color: #6c757d;
+    background-color: #007bff; /* Bouton avec la couleur bleue */
     color: white;
     border: none;
     font-size: 1rem;
@@ -76,7 +76,7 @@
 }
 
 .programme-section .btn:hover {
-    background-color: #495057;
+    background-color: #0056b3; /* Couleur bleu foncé lors du survol */
     color: #f8f9fa;
     transform: translateY(-3px); /* Ajout d'une légère animation au survol */
 }
@@ -88,7 +88,7 @@
 
 .section-title {
     font-size: 2.2rem;
-    color: #6c757d;
+    color: #007bff; /* Couleur bleue pour le titre */
     font-weight: bold;
     text-align: center;
     margin-bottom: 40px;
