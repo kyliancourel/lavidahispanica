@@ -1,11 +1,5 @@
-// Base URL pour GitHub Pages (ajustez si nécessaire pour d'autres environnements)
-const footerBasePath = ''; // Pas besoin de '/La-Vida-Hispanica/' ici pour GitHub Pages
-
-// Détecte la profondeur dans l'arborescence et ajuste le chemin vers footer.html
-const footerDepth = location.pathname.split('/').length - 1;
-const footerPath = `${'../'.repeat(footerDepth)}pages/footer.html`;
-
-fetch(footerPath)
+// Chargement du footer
+fetch('pages/footer.html')
   .then(response => {
     if (!response.ok) throw new Error(`Erreur ${response.status}: ${response.statusText}`);
     return response.text();
