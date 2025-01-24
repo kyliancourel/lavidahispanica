@@ -1,6 +1,9 @@
+// Base URL pour GitHub Pages (ajustez si nécessaire pour d'autres environnements)
+const basePath = '/La-Vida-Hispanica/';
+
 // Détecte la profondeur dans l'arborescence et ajuste le chemin vers navbar.html
-const depth = location.pathname.split('/').length - 2; // -2 pour exclure le domaine et le fichier lui-même
-const navbarPath = `${'../'.repeat(depth)}pages/navbar.html`;
+const depth = location.pathname.replace(basePath, '').split('/').length - 1; // -1 pour exclure le fichier lui-même
+const navbarPath = `${basePath}${'../'.repeat(depth)}pages/navbar.html`;
 
 fetch(navbarPath)
   .then(response => {
