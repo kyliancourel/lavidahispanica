@@ -1,5 +1,5 @@
 // Chargement de la navbar
-fetch('/lavidahispanica/pages/navbar.html')  // Ajout du préfixe '/lavidahispanica'
+fetch('https://kyliancourel.github.io/lavidahispanica/pages/navbar.html')  // Ajout du préfixe '/lavidahispanica'
   .then(response => {
     if (!response.ok) throw new Error(`Erreur ${response.status}: ${response.statusText}`);
     return response.text();

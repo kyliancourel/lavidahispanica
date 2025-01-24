@@ -1,5 +1,5 @@
 // Chargement du footer
-fetch('/lavidahispanica/pages/footer.html')  // Ajout du préfixe '/lavidahispanica'
+fetch('https://kyliancourel.github.io/lavidahispanica/pages/footer.html')  // Ajout du préfixe '/lavidahispanica'
   .then(response => {
     if (!response.ok) throw new Error(`Erreur ${response.status}: ${response.statusText}`);
     return response.text();
