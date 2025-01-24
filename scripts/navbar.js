@@ -1,12 +1,18 @@
-const navbar = `
-    <nav>
-        <link rel="stylesheet" href="../styles/navbar.css">
-        <ul>
-            <li><a href="../index.html">Accueil</a></li>
-            <li><a href="../pages/boite-outil.html">Boîte à outils</a></li>
-            <li><a href="../pages/videos-utiles.html">Vidéos utiles</a></li>
-        </ul>
-    </nav>
-`;
-
-document.getElementById("navbar-container").innerHTML = navbar;
+document.addEventListener("DOMContentLoaded", () => {
+    fetch("../pages/navbar.html")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Erreur lors du chargement de navbar.html: ${response.statusText}`);
+            }
+            return response.text();
+        })
+        .then(data => {
+            const navbarContainer = document.getElementById("navbar-container");
+            if (navbarContainer) {
+                navbarContainer.innerHTML = data;
+            } else {
+                console.error("Élément #navbar-container non trouvé !");
+            }
+        })
+        .catch(error => console.error("Erreur :", error));
+});
