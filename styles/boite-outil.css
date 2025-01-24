@@ -120,6 +120,7 @@
     height: auto;
     margin-right: 20px; /* Espacement entre l'image et le texte */
     border-radius: 8px;
+    text-align: justify; /* Justifie le texte */
 }
 
 .book-section {
@@ -130,40 +131,39 @@
     text-align: justify; /* Justifie le texte */
 }
 
-/* Conteneur pour les boutons d'achat */
+/* Conteneur pour les boutons Buy */
 .buy-buttons-container {
     display: flex;
-    justify-content: center; /* Centre les boutons horizontalement */
-    gap: 20px; /* Espacement entre les boutons */
-    margin-top: 20px; /* Ajoute un espacement au-dessus */
+    justify-content: center; /* Centre les boutons */
+    gap: 15px; /* Espacement modéré entre les boutons */
 }
 
-/* Boutons Acheter et Lire */
+/* Style des boutons "Lire" et "Acheter" */
 .buy-button {
     display: inline-block;
-    padding: 12px 28px; /* Ajuste le padding pour plus de confort visuel */
-    background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient bleu */
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Dégradé bleu */
     color: white;
     text-decoration: none;
-    font-size: 1.2rem; /* Taille du texte légèrement agrandie */
+    font-size: 1.1rem;
     font-weight: bold;
-    border-radius: 30px; /* Coins arrondis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), inset 0 -3px 6px rgba(0, 0, 0, 0.2); /* Ombre douce */
+    border-radius: 25px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), inset 0 -3px 6px rgba(0, 0, 0, 0.2);
     text-align: center;
-    transition: all 0.3s ease; /* Animation fluide */
+    transition: all 0.3s ease;
 }
 
 .buy-button:hover {
-    background: linear-gradient(135deg, #0056b3, #007bff); /* Inverse le gradient */
-    transform: scale(1.1); /* Augmente légèrement la taille */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25), inset 0 -4px 8px rgba(0, 0, 0, 0.3); /* Ombre plus marquée */
-    color: #ffebd8; /* Change la couleur du texte au survol */
+    background: linear-gradient(135deg, #0056b3, #007bff); /* Inverse du dégradé au survol */
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), inset 0 -4px 8px rgba(0, 0, 0, 0.3);
+    color: #ffebd8; /* Couleur claire lors du survol */
 }
 
 .buy-button:active {
-    background: linear-gradient(135deg, #003f8a, #0056b3); /* Gradient foncé pour effet pressé */
-    transform: scale(1); /* Retire l'effet de zoom */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), inset 0 -2px 4px rgba(0, 0, 0, 0.2); /* Ombre réduite */
+    background: linear-gradient(135deg, #003f8a, #0056b3); /* Couleur plus sombre lors de l'activation */
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), inset 0 -2px 4px rgba(0, 0, 0, 0.2);
     color: #ffebd8;
 }
 
@@ -181,13 +181,8 @@
         padding: 20px;
     }
 
-    .buy-buttons-container {
-        flex-direction: column; /* Aligne les boutons verticalement sur les petits écrans */
-        gap: 10px; /* Réduit l'espacement entre les boutons */
-    }
-
     .buy-button {
-        font-size: 1rem; /* Réduit la taille du texte */
-        padding: 10px 20px; /* Ajuste le padding */
+        font-size: 0.9rem;
+        padding: 8px 16px;
     }
 }
