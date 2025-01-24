@@ -7,88 +7,31 @@
     <meta name="description" content="La Vida Hispánica: ¡Sin Filtro! Découvrez nos études et inspirations hispanophones. Programmes immersifs et académiques.">
     <meta name="author" content="La Vida Hispánica">
     <title>Accueil | La Vida Hispánica: ¡Sin Filtro!</title>
-    <link rel="icon" type="image/png" href="/IMAGES/logo.png">
+    <link rel="icon" type="image/png" href="images/site/logo.png">
 
     <!-- CSS -->
-    <link href="/css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/navbar.css">
-    <link href="/css/transition.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/footer.css">
+    <link href="styles/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link href="styles/transition.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/footer.css">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Scripts -->
-    <script src="/js/transition.js"></script>
-    <script src="/js/navbar.js"></script>
-    <script src="/js/footer.js"></script>
+    <script src="scripts/transition.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/footer.js"></script>
 </head>
 
 <body>
 
-    <!-- Section Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="/IMAGES/logo.png" alt="Logo" width="50" class="me-2">
-                La Vida Hispánica: ¡Sin Filtro!
-            </a>
-            <!-- Menu de navigation -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">
-                            <i class="fas fa-home menu-icon"></i> Accueil
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="studyDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-book menu-icon"></i> Études
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="studyDropdown">
-                            <li><a class="dropdown-item" href="/html/licence.html">La Licence</a></li>
-                            <li><a class="dropdown-item" href="/html/master-meef.html">Master MEEF 2nd degrés</a></li>
-                            <li><a class="dropdown-item" href="/html/erasmus.html">Erasmus</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/html/videos-utiles.html">
-                            <i class="fas fa-video menu-icon"></i> Vidéos utiles
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/html/boite-outil.html">
-                            <i class="fas fa-toolbox menu-icon"></i> Boîte à outils
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="helpDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-question-circle menu-icon"></i> Aide
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="helpDropdown">
-                            <li><a class="dropdown-item" href="/html/organisation.html">Organisation</a></li>
-                            <li><a class="dropdown-item" href="/html/besoin-aide.html">Besoin d'aide</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/html/avis.html">
-                            <i class="fas fa-comment menu-icon"></i> Avis
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <!-- Navbar -->
+    <div id="navbar-container"></div> <!-- Navbar sera injectée ici par navbar.js -->
 
     <!-- Hero Section -->
     <div class="hero-section">
-        <img src="/IMAGES/logo.png" alt="Logo La Vida Hispánica" />
+        <img src="images/site/logo.png" alt="Logo La Vida Hispánica" />
         <h1>Bienvenue dans l'univers des Études Hispanophones</h1>
         <p>Plongez dans un programme dynamique, immersif et académique qui vous connecte à la culture, à la langue et à l'histoire hispanique.</p>
     </div>
@@ -115,38 +58,8 @@
         </div>
     </div>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-        <div class="footer-section programmes">
-            <h5>Nos programmes</h5>
-            <ul>
-                <li><a href="/html/annee1.html">Première année</a></li>
-                <li><a href="/html/annee2.html">Deuxième année</a></li>
-                <li><a href="/html/annee3.html">Troisième année</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-section autres-liens">
-            <h5>Autres liens intéressants</h5>
-            <ul>
-                <li><a href="/html/organisation.html">Organisation</a></li>
-                <li><a href="/html/erasmus.html">Erasmus</a></li>
-                <li><a href="/html/master-meef.html">Master MEEF 2nd Degrés</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-section social">
-            <h5>Contactez-moi</h5>
-            <ul class="social-links">
-                <li><strong>Email:</strong> kyliancourel.univ.rouen@gmail.com</li>
-                <li><a href="https://www.instagram.com/kyliancourel" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-                <li><a href="https://www.snapchat.com/add/kyliancourel95" target="_blank"><i class="fab fa-snapchat"></i> Snapchat</a></li>
-            </ul>
-        </div>
-    </div>
-    <p>&copy; 2025 La Vida Hispánica: ¡Sin Filtro! Tous les droits réservés.</p>
-</footer>
+    <!-- Footer -->
+    <div id="footer-container"></div> <!-- Footer sera injecté ici par footer.js -->
 
 </body>
 

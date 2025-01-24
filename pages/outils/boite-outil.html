@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boîte à outils | La Vida Hispánica: ¡Sin Filtro!</title>
-    <link rel="icon" type="image/png" href="../IMAGES/logo.png">
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/boite-outil.css">
-    <link href="../css/transition.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/site/logo.png">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/boite-outil.css">
+    <link href="../styles/transition.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -17,18 +17,18 @@
 <body>
 
     <!-- Chargement de la page -->
-    <script src="../js/transition.js"></script>
+    <script src="../scripts/transition.js"></script>
 
     <!-- Scripts supplémentaires -->
-    <script src="../js/navbar.js"></script>
-    <script src="../js/footer.js"></script>
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/footer.js"></script>
 
     <!-- Navbar -->
-    <div id="navbar-container"></div>
+    <div id="navbar-container"></div> <!-- Navbar sera injectée ici par navbar.js -->
 
     <!-- Section principale -->
     <div class="hero-section">
-        <img src="../IMAGES/logo.png" alt="Logo La Vida Hispánica" />
+        <img src="../images/site/logo.png" alt="Logo La Vida Hispánica" />
         <h1>Boîte à outils</h1>
         <p>Accédez à une sélection de ressources pour enrichir vos études et approfondir vos connaissances.</p>
     </div>
@@ -62,17 +62,18 @@
                     <h4>A sangre y fuego</h4>
                     <div class="content-wrapper">
                         <div class="book-section-container">
-                            <img src="../IMAGES/LIVRES/A sangre y fuego.jpg" alt="A sangre y fuego - Page de couverture"
+                            <img src="../images/livres/A sangre y fuego.jpg" alt="A sangre y fuego - Page de couverture"
                                 class="book-image">
                             <p class="book-description">
                                 <i>A sangre y fuego</i> reúne relatos considerados entre lo mejor escrito sobre la
-                                Guerra Civil española. Redactados por Manuel Chaves Nogales entre 1936 y 1937, y basados
-                                en hechos reales, retratan episodios vividos por auténticos héroes y mártires de la
-                                contienda. Liberal y republicano, Chaves, destacado periodista y director del periódico
-                                Ahora, vivió en Madrid durante el inicio de la guerra antes de exiliarse. Su obra,
-                                marcada por la compasión y la lucidez, aborda los horrores de la guerra con una
-                                perspectiva equidistante. Este clásico de la literatura española ofrece una visión
-                                única, inteligente y profundamente humana de uno de los momentos más oscuros de la
+                                Guerra Civil española. Redactados por Manuel Chaves Nogales entre 1936 y 1937, et basés
+                                en hechos reales, retratan episodios vividos par auténticos héroes et mártires de la
+                                contienda. Liberal et republicano, Chaves, destacado periodista et director del
+                                periódico
+                                Ahora, vivió en Madrid durant le début de la guerre avant de s'exiler. Sa œuvre,
+                                marquée par la compassion et la lucidité, aborde les horreurs de la guerre avec une
+                                perspective équidistante. Este clásico de la literatura española ofrece una visión
+                                única, inteligente et profondément humaine de uno de los momentos más oscuros de la
                                 historia.
                             </p>
                         </div>
@@ -88,25 +89,21 @@
                     <h4>Cortejo de sombras</h4>
                     <div class="content-wrapper">
                         <div class="book-section-container">
-                            <img src="../IMAGES/LIVRES/Cortejo de sombras.png"
+                            <img src="../images/livres/Cortejo de sombras.png"
                                 alt="Cortejo de sombras - Page de couverture" class="book-image">
                             <p class="book-description">
-                                <i>Tamoga</i> es un pueblo marcado por tragedias humanas y destinos entrelazados.
+                                <i>Tamoga</i> es un pueblo marcado por tragedias humanas et destinos entrelazados.
                                 Mortes, un
                                 comerciante en fuga, lo elige como el lugar para desaparecer. Sacramento Andreini pierde
                                 la razón tras la muerte de su marido. Palonzo, abandonado de niño, es acogido por
                                 Luzdivina, que busca llenar un vacío. Celso, el sastre, es llevado hacia un destino
                                 trágico, como tantos otros habitantes, víctimas de una guerra despiadada. En Cortejo de
-                                sombras, las voces de Tamoga se entrelazan, alternando entre coro, chirrido y silencio,
+                                sombras, las voces de Tamoga se entrelazan, alternando entre coro, chirrido et silencio,
                                 en un relato que trasciende el tiempo. Tras treinta años de olvido, Julián Ríos presenta
                                 este texto extraordinario, muestra de su genio literario.
                             </p>
                         </div>
                         <div class="buy-buttons-container">
-                            <!-- <div class="buy-button">
-                                <a href="../PDF/Littérature AL/El ruido de las cosas al caer - Juan Gabriel Vasquez.pdf"
-                                    class="buy-button" target="_blank">Lire</a>
-                            </div> -->
                             <div class="buy-button">
                                 <a href="https://www.casadellibro.com/libro-cortejo-de-sombras/9788481096910/1177313?srsltid=AfmBOor3ZdsZDcQDcMoe0M38iHjWhwigxOp0jfWtd1Nt3PJ0UqUK5hMa"
                                     class="buy-button" target="_blank">Acheter</a>
@@ -123,7 +120,7 @@
                     <h4>El ruido de las cosas al caer</h4>
                     <div class="content-wrapper">
                         <div class="book-section-container">
-                            <img src="../IMAGES/LIVRES/El ruido de las cosas al caer - Juan Gabriel Vasquez.png"
+                            <img src="../images/livres/El ruido de las cosas al caer - Juan Gabriel Vasquez.png"
                                 alt="El ruido de las cosas al caer - Page de couverture" class="book-image">
                             <p class="book-description">
                                 <i>El ruido de las cosas al caer</i> es una novela de suspense que retrata una
@@ -133,7 +130,7 @@
                                 años 70, época en la que jóvenes idealistas fueron testigos del auge de un negocio que
                                 llevó a Colombia al borde del abismo. La narración conecta estos hechos con símbolos
                                 como la fuga de un hipopótamo, vestigio del zoológico de Pablo Escobar. Ganadora de
-                                prestigiosos premios, la obra captura magistralmente un periodo oscuro y sus ecos.
+                                prestigiosos premios, la obra captura magistralmente un periodo oscuro et sus ecos.
                             </p>
                         </div>
                         <div class="buy-buttons-container">
@@ -163,7 +160,7 @@
                                 De l'ancien au Nouveau Monde, la fabuleuse épopée
                                 d'un vaurien en quête de fortune... En 160 pages au très grand format, le dessinateur de
                                 Blacksad et le scénariste de De Cape et de Crocs nous offrent cet album d'exception qui
-                                constitue leur Livre d'Or !Fripouille sympathique, don Pablos de Ségovie fait le récit
+                                constitue leur Livre d'Or ! Fripouille sympathique, don Pablos de Ségovie fait le récit
                                 de ses aventures picaresques dans cette Amérique qu'on appelait encore les Indes au
                                 siècle d'or. Tour à tour misérable et richissime, adoré et conspué, ses tribulations le
                                 mèneront des bas-fonds aux palais, des pics de la Cordillère aux méandres de l'Amazone,
@@ -172,8 +169,8 @@
                         </div>
                         <div class="buy-buttons-container">
                             <div class="buy-button">
-                                <a href="https://drive.google.com/file/d/1HYIE6pTbmMTQ9ok0Mr_NOVUSp6Extwh0/view?usp=drive_link" class="buy-button"
-                                    target="_blank">Lire</a>
+                                <a href="https://drive.google.com/file/d/1HYIE6pTbmMTQ9ok0Mr_NOVUSp6Extwh0/view?usp=drive_link"
+                                    class="buy-button" target="_blank">Lire</a>
                             </div>
                             <div class="buy-button">
                                 <a href="https://www.fnac.com/a13433021/Alain-Ayroles-Les-Indes-fourbes"
@@ -200,10 +197,6 @@
                             </p>
                         </div>
                         <div class="buy-buttons-container">
-                            <!-- <div class="buy-button">
-                                <a href="../PDF/Littérature AL/El ruido de las cosas al caer - Juan Gabriel Vasquez.pdf"
-                                    class="buy-button" target="_blank">Lire</a>
-                            </div> -->
                             <div class="buy-button">
                                 <a href="https://www.casadellibro.com/libro-caperucita-en-manhattan-escolar-de-filosofia/9788478444069/620822"
                                     class="buy-button" target="_blank">Acheter</a>
@@ -226,10 +219,6 @@
                             </p>
                         </div>
                         <div class="buy-buttons-container">
-                            <!-- <div class="buy-button">
-                                <a href="../PDF/Littérature AL/El ruido de las cosas al caer - Juan Gabriel Vasquez.pdf"
-                                    class="buy-button" target="_blank">Lire</a>
-                            </div> -->
                             <div class="buy-button">
                                 <a href="https://www.casadellibro.com/libro-malas-companias/9788468312484/2265384"
                                     class="buy-button" target="_blank">Acheter</a>
@@ -255,10 +244,6 @@
                             </p>
                         </div>
                         <div class="buy-buttons-container">
-                            <!-- <div class="buy-button">
-                                <a href="../PDF/Littérature AL/El ruido de las cosas al caer - Juan Gabriel Vasquez.pdf"
-                                    class="buy-button" target="_blank">Lire</a>
-                            </div> -->
                             <div class="buy-button">
                                 <a href="https://www.casadellibro.com/libro-la-casa-de-bernarda-alba/9788437622453/1043297"
                                     class="buy-button" target="_blank">Acheter</a>
@@ -267,6 +252,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- Section Grammaire -->
             <div class="content-section">
                 <h2>Grammaire</h2>
@@ -325,10 +311,6 @@
                                 <a href="https://drive.google.com/file/d/1hKym_asz9WrEdNEECiQ4IFEi0G4XBHPp/view?usp=drive_link"
                                     class="buy-button" target="_blank">Lire</a>
                             </div>
-                            <!-- <div class="buy-button">
-                                <a href="https://www.fnac.com/a6726255/Pierre-Gerboin-Grammaire-d-usage-de-l-espagnol-contemporain?oref=00000000-0000-0000-0000-000000000000&Origin=SEA_GOOGLE_PLA_BOOKS&esl-k=google-ads%7Cnx%7Cc%7Cm%7Ck%7Cp%7Ct%7Cdc%7Ca20111491090%7Cg20111491090&gad_source=1&gclid=Cj0KCQiAy8K8BhCZARIsAKJ8sfRdBlfYLJU7h77anoBz_fiu_bCPf0b81j4JA9I739l6l55IpDId-CgaArL-EALw_wcB&gclsrc=aw.ds"
-                                    class="buy-button" target="_blank">Acheter</a>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -356,15 +338,11 @@
                                 <a href="https://drive.google.com/file/d/1E-on2FVmrLs0xt0DdtWM21UBeTRfgJpe/view?usp=drive_link"
                                     class="buy-button" target="_blank">Lire</a>
                             </div>
-                            <!-- <div class="buy-button">
-                                <a href="https://www.fnac.com/a6726255/Pierre-Gerboin-Grammaire-d-usage-de-l-espagnol-contemporain?oref=00000000-0000-0000-0000-000000000000&Origin=SEA_GOOGLE_PLA_BOOKS&esl-k=google-ads%7Cnx%7Cc%7Cm%7Ck%7Cp%7Ct%7Cdc%7Ca20111491090%7Cg20111491090&gad_source=1&gclid=Cj0KCQiAy8K8BhCZARIsAKJ8sfRdBlfYLJU7h77anoBz_fiu_bCPf0b81j4JA9I739l6l55IpDId-CgaArL-EALw_wcB&gclsrc=aw.ds"
-                                    class="buy-button" target="_blank">Acheter</a>
-                            </div> -->
                         </div>
                     </div>
                 </div>
                 <div id="file-2">
-                    <h4>Maîtriser la grammaire espagnol</h4>
+                    <h4>Maîtriser la grammaire espagnole</h4>
                     <div class="content-wrapper">
                         <div class="book-section-container">
                             <img src="../IMAGES/LIVRES/Maîtriser la grammaire espagnoln à l'écrit et oral.png"
@@ -405,7 +383,8 @@
                             <img src="../IMAGES/LIVRES/Sintaxis de la lengua española.png"
                                 alt="El ruido de las cosas al caer - Page de couverture" class="book-image">
                             <p class="book-description">
-                                <i>Sintaxis (VOX - Lengua Española - Manuales prácticos)</i> es un manual completo que ofrece
+                                <i>Sintaxis (VOX - Lengua Española - Manuales prácticos)</i> es un manual completo que
+                                ofrece
                                 una explicación detallada de la sintaxis del español. Pensado para estudiantes y
                                 personas interesadas en mejorar su comprensión de la estructura gramatical de la lengua,
                                 el libro aborda de manera clara y accesible los temas clave de la sintaxis, desde las
@@ -417,13 +396,9 @@
                         </div>
                         <div class="buy-buttons-container">
                             <div class="buy-button">
-                                <a href="https://drive.google.com/file/d/1ufhpkqgPBXN6KJqBcxRyFiSyStn_YDuE/view?usp=drive_link" class="buy-button"
-                                    target="_blank">Lire</a>
+                                <a href="https://drive.google.com/file/d/1ufhpkqgPBXN6KJqBcxRyFiSyStn_YDuE/view?usp=drive_link"
+                                    class="buy-button" target="_blank">Lire</a>
                             </div>
-                            <!-- <div class="buy-button">
-                                <a href="https://www.fnac.com/a3598191/Juan-Gabriel-Vasquez-El-ruido-de-las-cosas-al-caer"
-                                    class="buy-button" target="_blank">Acheter</a>
-                            </div> -->
                         </div>
                     </div>
                 </div>
