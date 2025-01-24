@@ -1,18 +1,12 @@
-document.addEventListener("DOMContentLoaded", () => {
-    fetch("https://kyliancourel.github.io/La-Vida-Hispanica/pages/footer.html")
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`Erreur lors du chargement de footer.html: ${response.statusText}`);
-            }
-            return response.text();
-        })
-        .then(data => {
-            const footerContainer = document.getElementById("footer-container");
-            if (footerContainer) {
-                footerContainer.innerHTML = data;
-            } else {
-                console.error("Élément #footer-container non trouvé !");
-            }
-        })
-        .catch(error => console.error("Erreur :", error));
-});
+// Adaptez les chemins pour un fichier à la racine ou dans un sous-dossier
+const footerPath = location.pathname.includes('pages/') ? '../pages/footer.html' : 'pages/footer.html';
+
+fetch(footerPath)
+  .then(response => {
+    if (!response.ok) throw new Error(`Erreur ${response.status}: ${response.statusText}`);
+    return response.text();
+  })
+  .then(data => {
+    document.getElementById('footer-container').innerHTML = data;
+  })
+  .catch(error => console.error('Erreur lors du chargement du footer :', error));

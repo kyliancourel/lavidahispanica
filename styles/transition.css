@@ -1,17 +1,35 @@
-/* Classe pour le fade-out */
+/* Corps invisible au départ */
+body {
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0; /* Invisible au début */
+}
+
+/* Apparition progressive */
+body.fade-in {
+    opacity: 1; /* Visible avec effet de transition */
+}
+
+/* Disparition progressive */
 .fade-out {
     opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
     transition: opacity 0.5s ease-in-out;
 }
 
-/* Style global pour la page */
-body {
-    transition: opacity 0.5s ease-in-out;
-    opacity: 1;
+/* Transition des liens */
+a {
+    color: #007bff; /* Couleur par défaut */
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-/* Ajoutez un léger effet de fondu au survol des liens */
 a:hover {
-    /* background-color: #0056b3; */
-    transition: background-color 0.3s ease;
+    color: #0056b3; /* Couleur au survol */
+    background-color: rgba(0, 0, 0, 0.1); /* Légère surbrillance */
+    text-decoration: underline; /* Soulignement réapparait */
 }

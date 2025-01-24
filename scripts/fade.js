@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Ajoute la classe fade-in au chargement
+    // Apparition progressive lors du chargement
     document.body.classList.add('fade-in');
 
-    // Applique l'effet de transition sur les liens internes
+    // Gestion des liens avec transition
     document.querySelectorAll('.transition-link').forEach(link => {
         link.addEventListener('click', function (e) {
             // Vérifie si le lien est interne

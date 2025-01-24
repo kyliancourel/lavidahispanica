@@ -1,18 +1,12 @@
-document.addEventListener("DOMContentLoaded", () => {
-    fetch("https://kyliancourel.github.io/La-Vida-Hispanica/pages/navbar.html")
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`Erreur lors du chargement de navbar.html: ${response.statusText}`);
-            }
-            return response.text();
-        })
-        .then(data => {
-            const navbarContainer = document.getElementById("navbar-container");
-            if (navbarContainer) {
-                navbarContainer.innerHTML = data;
-            } else {
-                console.error("Élément #navbar-container non trouvé !");
-            }
-        })
-        .catch(error => console.error("Erreur :", error));
-});
+// Adaptez les chemins pour un fichier à la racine ou dans un sous-dossier
+const navbarPath = location.pathname.includes('pages/') ? '../pages/navbar.html' : 'pages/navbar.html';
+
+fetch(navbarPath)
+  .then(response => {
+    if (!response.ok) throw new Error(`Erreur ${response.status}: ${response.statusText}`);
+    return response.text();
+  })
+  .then(data => {
+    document.getElementById('navbar-container').innerHTML = data;
+  })
+  .catch(error => console.error('Erreur lors du chargement de la navbar :', error));
