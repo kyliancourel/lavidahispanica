@@ -1,6 +1,5 @@
 # Ignorer le dossier node_modules
 node_modules/
-workflows
 
 # Ignorer les fichiers temporaires de l'éditeur
 *.log
