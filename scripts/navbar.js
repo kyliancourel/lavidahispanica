@@ -1,5 +1,5 @@
 // Chargement de la navbar
-fetch('pages/navbar.html')
+fetch('/La-Vida-Hispanica/pages/navbar.html') // Utilisation du chemin correct pour GitHub Pages
   .then(response => {
     if (!response.ok) throw new Error(`Erreur ${response.status}: ${response.statusText}`);
     return response.text();
