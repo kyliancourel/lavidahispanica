@@ -4,3 +4,6 @@ node_modules/
 # Ignorer les fichiers temporaires de l'éditeur
 *.log
 *.swp
+
+# Ignorer les fichiers
+.DS_Store
