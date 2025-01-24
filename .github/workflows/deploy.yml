@@ -5,6 +5,9 @@ on:
     branches:
       - main  # Branche utilisée pour le déploiement (modifiez si nécessaire)
 
+permissions:
+  id-token: write  # Ajoutez cette ligne pour donner les bonnes permissions au token
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
