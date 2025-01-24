@@ -1,9 +1,9 @@
 // Base URL pour GitHub Pages (ajustez si nécessaire pour d'autres environnements)
-const basePath = '/La-Vida-Hispanica/';
+const footerBasePath = '/La-Vida-Hispanica/';
 
 // Détecte la profondeur dans l'arborescence et ajuste le chemin vers footer.html
-const depth = location.pathname.replace(basePath, '').split('/').length - 1; // -1 pour exclure le fichier lui-même
-const footerPath = `${basePath}${'../'.repeat(depth)}pages/footer.html`;
+const depth = location.pathname.replace(footerBasePath, '').split('/').length - 1; // -1 pour exclure le fichier lui-même
+const footerPath = `${footerBasePath}${'../'.repeat(depth)}pages/footer.html`;
 
 fetch(footerPath)
   .then(response => {
