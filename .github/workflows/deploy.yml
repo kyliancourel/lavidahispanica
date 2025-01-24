@@ -39,4 +39,4 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
-          artifact_name: github-pages  # Assurez-vous que le nom de l'artefact correspond à celui téléchargé
+          artifact_name: github  # Assurez-vous que le nom de l'artefact correspond à celui téléchargé
