@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Apparition progressive lors du chargement
+    // Apparition progressive lors du chargement de la page
     document.body.classList.add('fade-in');
 
     // Gestion des liens avec transition
@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
             // Ajoute l'effet de fade-out
             document.body.classList.add('fade-out');
 
-            // Redirige après l'animation
+            // Redirige après l'animation (500 ms pour correspondre à l'animation CSS)
             setTimeout(() => {
                 window.location.href = href;
-            }, 500); // Durée correspondant au CSS
+            }, 500); // La durée doit correspondre à celle de fade-out (1s ici, donc 1000ms)
         });
     });
 });

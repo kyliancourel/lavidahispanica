@@ -139,6 +139,12 @@
     background-color: #f9f9f9;
 }
 
+/* Style de la barre de navigation lorsqu'une recherche est en cours */
+.navbar.search-active {
+    background-color: #f8f9fa; /* Exemple de fond plus clair pendant la recherche */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Légère ombre pour un effet visuel */
+}
+
 /* Responsive pour la barre de recherche */
 @media (max-width: 768px) {
     .search-container {

@@ -34,6 +34,19 @@ a:hover {
     text-decoration: underline; /* Soulignement réapparait */
 }
 
+/* Définition des animations */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
 /* Optimisation responsive */
 @media (max-width: 768px) {
     /* Sur les petits écrans, assurez-vous que l'effet de fade reste fluide */

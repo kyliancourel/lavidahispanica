@@ -18,10 +18,18 @@ document.addEventListener('DOMContentLoaded', function () {
             // Fonction de recherche
             const searchInput = document.getElementById('search-input');
             const searchResults = document.getElementById('search-results');
+            const navbar = document.querySelector('.navbar'); // Sélectionner la barre de navigation
 
             // Écouter la saisie dans le champ de recherche
             searchInput.addEventListener('input', function () {
                 const query = searchInput.value.trim();
+
+                // Ajouter une classe à la navbar lorsque la recherche commence
+                if (query.length > 0) {
+                    navbar.classList.add('search-active');
+                } else {
+                    navbar.classList.remove('search-active');
+                }
 
                 // Si la recherche est vide, on vide les résultats
                 if (query.length === 0) {
