@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Charger le fichier index.json
-    fetch('/index.json')
+    fetch('https://kyliancourel.github.io/lavidahispanica/index.json') // Utilise './' pour accéder au fichier index.json relatif au site
         .then(response => response.json())
         .then(data => {
             // Initialiser Lunr.js
@@ -16,21 +16,18 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             // Fonction de recherche
-            const searchInput = document.getElementById('search-input');
-            const searchResults = document.getElementById('search-results');
-            const navbar = document.querySelector('.navbar'); // Sélectionner la barre de navigation
+            const searchInput = document.getElementById('searchInput');
+            const searchButton = document.getElementById('searchButton');
+            const searchResults = document.getElementById('results');
 
-            // Écouter la saisie dans le champ de recherche
-            searchInput.addEventListener('input', function () {
-                const query = searchInput.value.trim();
+            // Vérifier si les éléments existent
+            if (!searchInput || !searchButton || !searchResults) {
+                console.error('Éléments de recherche introuvables.');
+                return;
+            }
 
-                // Ajouter une classe à la navbar lorsque la recherche commence
-                if (query.length > 0) {
-                    navbar.classList.add('search-active');
-                } else {
-                    navbar.classList.remove('search-active');
-                }
-
+            // Fonction de recherche
+            function search(query) {
                 // Si la recherche est vide, on vide les résultats
                 if (query.length === 0) {
                     searchResults.innerHTML = '';
@@ -52,6 +49,18 @@ document.addEventListener('DOMContentLoaded', function () {
                         </div>
                     `;
                 }).join('');
+            }
+
+            // Écouter la saisie dans le champ de recherche
+            searchInput.addEventListener('input', function () {
+                const query = searchInput.value.trim();
+                search(query);
+            });
+
+            // Écouter le clic sur le bouton de recherche
+            searchButton.addEventListener('click', function () {
+                const query = searchInput.value.trim();
+                search(query);
             });
         })
         .catch(err => console.error('Erreur lors du chargement du fichier index.json:', err));
