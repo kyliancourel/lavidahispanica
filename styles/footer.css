@@ -50,14 +50,22 @@ footer {
 .social-links {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .social-links li {
-    margin: 10px 0;
+    margin: 0 10px;
 }
 
 .social-links i {
-    margin-right: 10px;
+    font-size: 1.5rem; /* Taille des icônes */
+    color: #ffffff; /* Couleur des icônes */
+    transition: color 0.3s ease;
+}
+
+.social-links i:hover {
+    color: #f4a261; /* Couleur orange au survol */
 }
 
 .social-links a {
@@ -65,7 +73,7 @@ footer {
     text-decoration: none;
 }
 
-.social-links a:hover {
+.social-links a:hover i {
     color: #f4a261; /* Orange au survol */
 }
 
@@ -105,33 +113,43 @@ footer p {
 
 /* Pour les écrans plus larges, retour à la disposition en grille */
 @media (min-width: 769px) {
-.footer-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-}
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
 
-.footer-section {
-    text-align: left;
-}
+    .footer-section {
+        text-align: left;
+    }
 
-.footer-section h5 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
+    .footer-section h5 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
 
-.footer-section ul {
-    list-style-type: none;
-    padding: 0;
-}
+    .footer-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
 
-.footer-section ul li {
-    margin: 5px 0;
-}
+    .footer-section ul li {
+        margin: 5px 0;
+    }
 }
 
 /* Responsivité des liens sociaux */
 .footer-section.social a {
-display: block;
-margin-bottom: 5px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Pour les icônes sociales, ajouter un effet au survol */
+.social-links li a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-links li a:hover {
+    transform: scale(1.2); /* Agrandir légèrement l'icône au survol */
 }

@@ -71,6 +71,39 @@
     text-decoration: underline;
 }
 
+/* Social Icons Styles */
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links i {
+    font-size: 1.5rem; /* Taille des icônes */
+    color: #28a745; /* Couleur verte des icônes */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links i:hover {
+    color: #218838; /* Changement de couleur au survol */
+    transform: scale(1.2); /* Agrandir l'icône au survol */
+}
+
+.social-links a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.social-links a:hover i {
+    color: #218838; /* Couleur verte foncée au survol */
+}
+
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
     /* Tablettes et écrans moyens */
