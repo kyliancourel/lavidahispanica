@@ -37,6 +37,7 @@
 /* Conteneur Principal */
 .container {
     padding: 50px 20px;
+    margin: 0 auto;
 }
 
 /* Section Contenu */
@@ -45,7 +46,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 30px;
-    margin-bottom: 30px;
+    margin: 20px auto; /* Ajout de marges uniformes */
     transition: box-shadow 0.3s ease;
 }
 
@@ -98,7 +99,7 @@
     background-color: #d0e8ff;
     padding: 15px;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin: 20px 0; /* Ajout de marges verticales */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -109,39 +110,40 @@
 /* Section Book avec image et texte à droite */
 .book-section-container {
     display: flex;
-    align-items: center; /* Aligne l'image et le texte verticalement */
-    justify-content: space-between; /* Espace entre l'image et le texte */
-    margin-bottom: 20px; /* Espacement inférieur */
-    text-align: justify; /* Justifie le texte */
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0; /* Marges uniformes entre les sections */
+    text-align: justify;
 }
 
 .book-section-container img {
-    width: 180px; /* Taille de l'image */
+    width: 180px;
     height: auto;
-    margin-right: 20px; /* Espacement entre l'image et le texte */
+    margin-right: 20px;
     border-radius: 8px;
 }
 
 .book-section {
     font-size: 1.2rem;
-    max-width: 60%; /* Limite la largeur du texte */
+    max-width: 60%;
     font-weight: 300;
     line-height: 1.6;
-    text-align: justify; /* Justifie le texte */
+    text-align: justify;
 }
 
 /* Conteneur pour les boutons Buy */
 .buy-buttons-container {
     display: flex;
-    justify-content: center; /* Centre les boutons */
-    gap: 15px; /* Espacement modéré entre les boutons */
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px; /* Ajout de marges */
 }
 
 /* Style des boutons "Lire" et "Acheter" */
 .buy-button {
     display: inline-block;
     padding: 12px 24px;
-    background: linear-gradient(135deg, #007bff, #0056b3); /* Dégradé bleu */
+    background: linear-gradient(135deg, #007bff, #0056b3);
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
@@ -153,14 +155,14 @@
 }
 
 .buy-button:hover {
-    background: linear-gradient(135deg, #0056b3, #007bff); /* Inverse du dégradé au survol */
+    background: linear-gradient(135deg, #0056b3, #007bff);
     transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), inset 0 -4px 8px rgba(0, 0, 0, 0.3);
-    color: #ffebd8; /* Couleur claire lors du survol */
+    color: #ffebd8;
 }
 
 .buy-button:active {
-    background: linear-gradient(135deg, #003f8a, #0056b3); /* Couleur plus sombre lors de l'activation */
+    background: linear-gradient(135deg, #003f8a, #0056b3);
     transform: scale(1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), inset 0 -2px 4px rgba(0, 0, 0, 0.2);
     color: #ffebd8;
@@ -168,15 +170,6 @@
 
 /* Réglages Responsives */
 @media (max-width: 1024px) {
-    /* Pour tablettes et petits écrans */
-    .hero-section h1 {
-        font-size: 2.4rem;
-    }
-
-    .hero-section p {
-        font-size: 1.1rem;
-    }
-
     .container {
         padding: 40px 20px;
     }
@@ -191,7 +184,7 @@
     }
 
     .book-section-container {
-        flex-direction: column; /* Passer la disposition à une colonne */
+        flex-direction: column;
         text-align: center;
     }
 
@@ -201,20 +194,11 @@
     }
 
     .book-section {
-        max-width: 80%; /* Augmenter la largeur du texte */
+        max-width: 80%;
     }
 }
 
 @media (max-width: 768px) {
-    /* Pour écrans plus petits comme les smartphones */
-    .hero-section h1 {
-        font-size: 2.2rem;
-    }
-
-    .hero-section p {
-        font-size: 1rem;
-    }
-
     .container {
         padding: 30px 15px;
     }
@@ -224,23 +208,18 @@
         padding: 8px 16px;
     }
 
-    .book-section-container {
-        flex-direction: column; /* Mettre l'image et le texte en colonne */
-    }
-
     .book-section-container img {
         margin-bottom: 15px;
         width: 150px;
     }
 
     .book-section {
-        max-width: 90%; /* Texte plus large */
+        max-width: 90%;
         font-size: 1.1rem;
     }
 }
 
 @media (max-width: 480px) {
-    /* Pour les écrans très petits */
     .hero-section {
         padding: 60px 15px;
     }
@@ -250,24 +229,8 @@
         padding: 10px;
     }
 
-    .hero-section h1 {
-        font-size: 1.8rem;
-    }
-
     .content-section h2 {
-        font-size: 1.8rem; /* Ajustement pour la lisibilité */
-    }
-
-    .content-section h3 {
-        font-size: 1.5rem;
-    }
-
-    .content-section h4 {
-        font-size: 1.3rem;
-    }
-
-    .content-section ul li {
-        font-size: 1rem; /* Ajustement de la taille de la police */
+        font-size: 1.8rem;
     }
 
     .buy-button {
@@ -276,7 +239,7 @@
     }
 
     .book-section-container img {
-        width: 130px; /* Image plus petite */
+        width: 130px;
     }
 
     .book-section {
