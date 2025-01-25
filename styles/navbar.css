@@ -61,7 +61,7 @@
     color: #fff;
 }
 
-/* Généralement Responsive pour les écrans inférieurs à 992px */
+/* Généralement Responsive pour les écrans inférieurs à 1116px */
 @media (max-width: 1116px) {
     .navbar {
         padding: 0.8rem 1rem;
@@ -86,6 +86,15 @@
 @media (max-width: 768px) {
     .sin-filtro {
         display: none;
+    }
+
+    /* Réduire la taille de "La Vida Hispánica" */
+    .navbar-brand {
+        font-size: 1rem; /* Réduction de la taille de police */
+    }
+
+    .navbar-brand img {
+        width: 40px; /* Réduction de la taille du logo */
     }
 }
 
