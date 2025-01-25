@@ -62,24 +62,20 @@
     text-align: justify;
 }
 
-.programme-section .btn {
-    background-color: #007bff; /* Bouton avec la couleur bleue */
-    color: white;
+.programme-section a.btn {
+    background-color: #6c757d; /* Couleur de fond personnalisée */
     border: none;
-    font-size: 1rem;
+    color: white;
+    font-weight: bold;
     padding: 10px 20px;
-    border-radius: 8px; /* Arrondi plus prononcé pour un style moderne */
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.programme-section .btn:hover {
-    background-color: #0056b3; /* Couleur bleu foncé lors du survol */
-    color: #f8f9fa;
-    transform: translateY(-3px); /* Ajout d'une légère animation au survol */
+.programme-section a.btn:hover {
+    background-color: #495057;
 }
+
 
 /* General Styling for Licence Page */
 .container {

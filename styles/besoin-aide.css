@@ -1,6 +1,6 @@
- /* Besoin d'Aide Page Specific Styles */
+/* Besoin d'Aide Page Specific Styles */
 
- .hero-section {
+.hero-section {
     background-color: #28a745;
     color: white;
     text-align: center;
@@ -72,9 +72,41 @@
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    /* Tablettes et écrans moyens */
     .hero-section h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
+    }
+
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+
+    .content-section {
+        padding: 25px 15px;
+    }
+
+    .content-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .content-section ul li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Smartphones et petits écrans */
+    .hero-section {
+        padding: 70px 15px;
+    }
+
+    .hero-section img {
+        width: 150px; /* Réduit la taille de l'image pour les petits écrans */
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
     }
 
     .hero-section p {
@@ -82,6 +114,41 @@
     }
 
     .content-section {
-        padding: 30px 15px;
+        padding: 20px 10px;
+    }
+
+    .content-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .content-section ul li {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Écrans très petits */
+    .hero-section {
+        padding: 50px 10px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-section p {
+        font-size: 0.9rem;
+    }
+
+    .content-section {
+        padding: 15px 8px;
+    }
+
+    .content-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .content-section ul li {
+        font-size: 0.9rem;
     }
 }

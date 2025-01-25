@@ -1,5 +1,5 @@
-   /* Variables pour une personnalisation rapide */
-   :root {
+/* Variables pour une personnalisation rapide */
+:root {
     --primary-color: #007bff; /* Bleu pour le thème Organisation */
     --secondary-color: #0056b3; /* Bleu foncé pour les hover */
     --text-color: #333;
@@ -88,7 +88,27 @@ body {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    /* Tablettes et grands écrans */
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .content-section embed {
+        height: 350px;
+    }
+}
+
 @media (max-width: 768px) {
+    /* Smartphones et écrans plus petits */
     .hero-section h1 {
         font-size: 2rem;
     }
@@ -97,7 +117,38 @@ body {
         font-size: 1rem;
     }
 
+    .content-section {
+        padding: 20px;
+    }
+
+    .content-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .content-section h5 {
+        font-size: 1rem;
+    }
+
     .content-section embed {
         height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Écrans très petits */
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-section p {
+        font-size: 0.9rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .content-section embed {
+        height: 250px;
     }
 }

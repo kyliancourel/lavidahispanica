@@ -81,3 +81,16 @@
         padding: 0.6rem;
     }
 }
+
+/* Cacher le texte '¡Sin Filtro!' sur les petits écrans */
+@media (max-width: 768px) {
+    .sin-filtro {
+        display: none;
+    }
+}
+
+/* Assurer la responsivité des images */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}

@@ -33,3 +33,18 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.1); /* Légère surbrillance */
     text-decoration: underline; /* Soulignement réapparait */
 }
+
+/* Optimisation responsive */
+@media (max-width: 768px) {
+    /* Sur les petits écrans, assurez-vous que l'effet de fade reste fluide */
+    body {
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    a {
+        transition: color 0.2s ease, background-color 0.2s ease;
+    }
+}

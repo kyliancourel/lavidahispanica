@@ -76,9 +76,62 @@ footer p {
 }
 
 /* Responsiveness */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
+/* Modifier l'affichage du footer pour qu'il soit en une seule colonne sur les petits écrans */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-section h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+/* Pour les écrans plus larges, retour à la disposition en grille */
+@media (min-width: 769px) {
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.footer-section {
+    text-align: left;
+}
+
+.footer-section h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+}
+
+/* Responsivité des liens sociaux */
+.footer-section.social a {
+display: block;
+margin-bottom: 5px;
 }

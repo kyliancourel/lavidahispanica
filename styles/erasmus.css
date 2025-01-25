@@ -14,6 +14,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: var(--background-color);
 }
 
 /* Hero Section */
@@ -100,9 +101,45 @@ body {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    /* Pour tablettes et écrans de taille moyenne */
     .hero-section-erasmus h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
+    }
+
+    .hero-section-erasmus p {
+        font-size: 1.1rem;
+    }
+
+    .content-section-erasmus {
+        padding: 25px;
+    }
+
+    .content-section-erasmus h2 {
+        font-size: 1.8rem;
+    }
+
+    .content-section-erasmus p {
+        font-size: 1rem;
+    }
+
+    .content-section-erasmus a.btn {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Pour petits écrans comme les smartphones */
+    .hero-section-erasmus {
+        padding: 80px 15px;
+    }
+
+    .hero-section-erasmus img {
+        width: 200px; /* Ajuster la taille de l'image */
+    }
+
+    .hero-section-erasmus h1 {
+        font-size: 1.8rem;
     }
 
     .hero-section-erasmus p {
@@ -110,6 +147,47 @@ body {
     }
 
     .content-section-erasmus {
-        padding: 20px;
+        padding: 15px;
+    }
+
+    .content-section-erasmus h2 {
+        font-size: 1.6rem;
+    }
+
+    .content-section-erasmus p {
+        font-size: 0.95rem;
+    }
+
+    .content-section-erasmus a.btn {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Pour écrans très petits */
+    .hero-section-erasmus h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-section-erasmus p {
+        font-size: 0.9rem;
+    }
+
+    .content-section-erasmus {
+        padding: 10px;
+    }
+
+    .content-section-erasmus h2 {
+        font-size: 1.4rem;
+    }
+
+    .content-section-erasmus p {
+        font-size: 0.85rem;
+    }
+
+    .content-section-erasmus a.btn {
+        font-size: 0.8rem;
+        padding: 5px 10px;
     }
 }

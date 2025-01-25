@@ -98,7 +98,27 @@ body {
 }
 
 /* Responsive Layout */
+@media (max-width: 1200px) {
+    /* Écrans moyens */
+    .hero-section h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .content-section {
+        padding: 25px;
+    }
+}
+
 @media (max-width: 991px) {
+    /* Tablettes et grands écrans */
     .navbar-toggler {
         display: block;
     }
@@ -111,4 +131,69 @@ body {
         padding: 20px;
     }
 
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Smartphones et petits écrans */
+    .hero-section {
+        padding: 80px 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-section p {
+        font-size: 0.95rem;
+    }
+
+    .content-section {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .intro-section h4 {
+        font-size: 1.1rem;
+    }
+
+    .intro-section p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Écrans très petits (ex : téléphones) */
+    .hero-section h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-section p {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .content-section h4 {
+        font-size: 1.2rem;
+    }
+
+    .content-section p {
+        font-size: 0.9rem;
+    }
 }

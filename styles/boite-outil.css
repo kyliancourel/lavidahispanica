@@ -120,7 +120,6 @@
     height: auto;
     margin-right: 20px; /* Espacement entre l'image et le texte */
     border-radius: 8px;
-    text-align: justify; /* Justifie le texte */
 }
 
 .book-section {
@@ -168,7 +167,46 @@
 }
 
 /* Réglages Responsives */
+@media (max-width: 1024px) {
+    /* Pour tablettes et petits écrans */
+    .hero-section h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        padding: 40px 20px;
+    }
+
+    .content-section {
+        padding: 20px;
+    }
+
+    .buy-button {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+
+    .book-section-container {
+        flex-direction: column; /* Passer la disposition à une colonne */
+        text-align: center;
+    }
+
+    .book-section-container img {
+        margin-bottom: 15px;
+        width: 160px;
+    }
+
+    .book-section {
+        max-width: 80%; /* Augmenter la largeur du texte */
+    }
+}
+
 @media (max-width: 768px) {
+    /* Pour écrans plus petits comme les smartphones */
     .hero-section h1 {
         font-size: 2.2rem;
     }
@@ -177,12 +215,71 @@
         font-size: 1rem;
     }
 
-    .content-section {
-        padding: 20px;
+    .container {
+        padding: 30px 15px;
     }
 
     .buy-button {
         font-size: 0.9rem;
         padding: 8px 16px;
+    }
+
+    .book-section-container {
+        flex-direction: column; /* Mettre l'image et le texte en colonne */
+    }
+
+    .book-section-container img {
+        margin-bottom: 15px;
+        width: 150px;
+    }
+
+    .book-section {
+        max-width: 90%; /* Texte plus large */
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Pour les écrans très petits */
+    .hero-section {
+        padding: 60px 15px;
+    }
+
+    .hero-section img {
+        width: 150px;
+        padding: 10px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.8rem; /* Ajustement pour la lisibilité */
+    }
+
+    .content-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .content-section h4 {
+        font-size: 1.3rem;
+    }
+
+    .content-section ul li {
+        font-size: 1rem; /* Ajustement de la taille de la police */
+    }
+
+    .buy-button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .book-section-container img {
+        width: 130px; /* Image plus petite */
+    }
+
+    .book-section {
+        font-size: 1rem;
     }
 }

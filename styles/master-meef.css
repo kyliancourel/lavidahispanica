@@ -1,5 +1,5 @@
- /* Variables globales pour les couleurs et styles */
- :root {
+/* Variables globales pour les couleurs et styles */
+:root {
     --primary-color: #17a2b8; /* Couleur bleue distinctive */
     --secondary-color: #138496; /* Bleu foncé pour les accents */
     --text-color: #333;
@@ -86,9 +86,33 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    /* Tablettes et écrans moyens */
     .hero-section h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
+    }
+
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+
+    .construction-image {
+        margin: 20px auto;
+    }
+
+    .content-section h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Smartphones et petits écrans */
+    .hero-section {
+        padding: 60px 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
     }
 
     .hero-section p {
@@ -97,5 +121,44 @@ body {
 
     .construction-image {
         margin: 20px auto;
+    }
+
+    .content-section {
+        padding: 30px 15px;
+    }
+
+    .content-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .content-section p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Écrans très petits */
+    .hero-section h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-section p {
+        font-size: 0.9rem;
+    }
+
+    .construction-image {
+        margin: 15px auto;
+    }
+
+    .content-section {
+        padding: 25px 10px;
+    }
+
+    .content-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .content-section p {
+        font-size: 0.9rem;
     }
 }

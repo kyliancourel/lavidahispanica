@@ -64,7 +64,7 @@
 
 .video-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Utilisation de auto-fit pour une meilleure répartition */
     gap: 30px;
     margin: 0 auto;
     max-width: 1400px;
@@ -110,13 +110,35 @@
     transform: scale(1.05); /* Légère mise en valeur au survol */
 }
 
-@media (max-width: 768px) {
+/* Modification du comportement pour les écrans plus petits */
+@media (max-width: 1024px) {
+    /* Pour les tablettes et grands écrans mobiles */
     .hero-section h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .hero-section p {
         font-size: 1.1rem;
+    }
+
+    .video-container {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Moins de largeur de colonne pour les tablettes */
+        gap: 25px;
+    }
+
+    .video-item iframe {
+        height: 280px; /* Hauteur réduite sur les écrans moyens */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Pour les petits écrans mobiles */
+    .hero-section h1 {
+        font-size: 1.8rem; /* Réduction de la taille du titre */
+    }
+
+    .hero-section p {
+        font-size: 1rem; /* Réduction de la taille du texte */
     }
 
     .content-section {
@@ -124,11 +146,44 @@
     }
 
     .video-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Une seule vidéo par ligne */
         gap: 20px;
     }
 
     .video-item {
         padding: 15px;
+    }
+
+    .video-item iframe {
+        height: 200px; /* Réduction de la hauteur des vidéos sur petits écrans */
+    }
+}
+
+/* Réponse aux très petits écrans */
+@media (max-width: 480px) {
+    /* Pour les écrans très petits */
+    .hero-section {
+        padding: 60px 20px; /* Réduction de la taille du padding */
+    }
+
+    .hero-section img {
+        width: 120px; /* Réduction de l'image */
+        padding: 8px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.6rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.6rem; /* Ajustement de la taille du sous-titre */
+    }
+
+    .video-item h5 {
+        font-size: 1.2rem; /* Réduction de la taille des titres */
+    }
+
+    .video-item iframe {
+        height: 180px; /* Ajustement de la hauteur des vidéos */
     }
 }
