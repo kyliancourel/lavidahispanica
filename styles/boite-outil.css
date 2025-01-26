@@ -1,4 +1,12 @@
-/* Boîte à outils - Styles spécifiques à la page */
+/* Styles Généraux */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
 
 /* Section Héro */
 .hero-section {
@@ -54,14 +62,6 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-.content-section img {
-    width: 200px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
 .content-section h2 {
     font-size: 2.2rem;
     color: #007bff;
@@ -70,7 +70,24 @@
     text-align: center;
 }
 
-/* Style des boutons "Buy" */
+/* Description avec "ver más" */
+.book-description {
+    max-height: 4.8em; /* Trois lignes avec overflow */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.6;
+    transition: max-height 0.3s ease;
+}
+
+/* Conteneur des boutons */
+.buy-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Bouton "Buy" */
 .buy-button {
     display: inline-block;
     padding: 14px 28px;
@@ -80,17 +97,28 @@
     font-size: 1.2rem;
     font-weight: bold;
     border-radius: 25px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), inset 0 -3px 6px rgba(0, 0, 0, 0.2);
     text-align: center;
     transition: all 0.3s ease;
 }
 
 .buy-button:hover {
+    background: linear-gradient(135deg, #0056b3, #007bff);
     transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), inset 0 -4px 8px rgba(0, 0, 0, 0.3);
+    color: #ffebd8;
 }
 
-/* Style du bouton "ver más" */
+.buy-button:active {
+    background: linear-gradient(135deg, #003f8a, #0056b3);
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), inset 0 -2px 4px rgba(0, 0, 0, 0.2);
+    color: #ffebd8;
+}
+
+/* Bouton "ver más" */
 .ver-mas-btn {
-    display: none; /* Par défaut, le bouton n'est pas visible */
+    display: none; /* Masqué par défaut */
     padding: 8px 16px;
     background-color: #6c757d;
     color: white;
@@ -107,24 +135,57 @@
     background-color: #5a6268;
 }
 
-/* Style pour la description avec un bouton "ver más" */
-.book-description {
-    max-height: 4.5em; /* Correspond à environ 3 lignes */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: 1.5em;
-    transition: max-height 0.3s ease;
-}
-
-/* Affichage responsive */
+/* Réglages Responsives */
 @media (max-width: 768px) {
+    .container {
+        padding: 30px 15px;
+    }
+
+    .buy-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .book-description {
+        max-height: 6.4em; /* Ajustement pour plus de texte sur écrans moyens */
+    }
+
     .ver-mas-btn {
-        display: inline-block; /* Le bouton apparaît pour les écrans <= 768px */
+        display: inline-block; /* Visible uniquement sur petits écrans */
     }
 }
 
 @media (max-width: 468px) {
+    .hero-section {
+        padding: 60px 15px;
+    }
+
+    .hero-section img {
+        width: 150px;
+        padding: 10px;
+    }
+
+    .content-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .buy-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .book-description {
+        max-height: 4.8em; /* Trois lignes pour les écrans très petits */
+    }
+
     .ver-mas-btn {
-        display: none; /* Le bouton est masqué au-delà de 468px */
+        display: inline-block;
+        padding: 8px 14px;
+    }
+}
+
+@media (min-width: 469px) {
+    .ver-mas-btn {
+        display: none !important; /* Forcer le masquage sur écrans larges */
     }
 }
