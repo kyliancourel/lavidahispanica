@@ -305,8 +305,7 @@
 }
 
 /* Cacher le bouton "ver más" sur les écrans plus larges */
-@media (min-width: 469px) {
+@media (max-width: 469px) {
     .ver-mas-button {
-        display: none;
     }
 }
