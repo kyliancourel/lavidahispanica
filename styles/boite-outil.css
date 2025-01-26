@@ -142,11 +142,11 @@
 /* Style des boutons "Buy" */
 .buy-button {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 14px 28px;
     background: linear-gradient(135deg, #007bff, #0056b3); /* Bleu dégradé */
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     border-radius: 25px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), inset 0 -3px 6px rgba(0, 0, 0, 0.2);
@@ -171,24 +171,27 @@
 /* Style du bouton "ver más" */
 .ver-mas-btn {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #28a745;  /* Couleur verte */
+    padding: 8px 18px;
+    background-color: #6c757d;  /* Gris subtil */
     color: white;
     border: none;
-    border-radius: 25px;
-    font-size: 1.1rem;
+    border-radius: 20px;
+    font-size: 1rem;
     cursor: pointer;
     margin-top: 10px;
     transition: background-color 0.3s ease;
     text-align: center;
+    opacity: 0.8;
 }
 
 .ver-mas-btn:hover {
-    background-color: #218838;  /* Teinte plus foncée de vert */
+    background-color: #5a6268;  /* Teinte plus foncée de gris */
+    opacity: 1;
 }
 
 .ver-mas-btn:active {
-    background-color: #1e7e34;  /* Teinte encore plus foncée */
+    background-color: #4e555b;  /* Teinte encore plus foncée */
+    opacity: 0.9;
 }
 
 /* Réglages Responsives */
@@ -202,8 +205,8 @@
     }
 
     .buy-button {
-        font-size: 1rem;
-        padding: 10px 18px;
+        font-size: 1.1rem;
+        padding: 12px 24px;
     }
 
     .book-section-container {
@@ -219,6 +222,10 @@
     .book-section {
         max-width: 80%;
     }
+
+    .ver-mas-btn {
+        padding: 8px 16px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -227,8 +234,8 @@
     }
 
     .buy-button {
-        font-size: 0.9rem;
-        padding: 8px 16px;
+        font-size: 1rem;
+        padding: 10px 20px;
     }
 
     .book-section-container img {
@@ -270,8 +277,8 @@
     }
 
     .buy-button {
-        font-size: 0.8rem;
-        padding: 6px 12px;
+        font-size: 0.9rem;
+        padding: 8px 16px;
     }
 
     .book-section-container img {
@@ -280,5 +287,10 @@
 
     .book-section {
         font-size: 1rem;
+    }
+
+    /* Le bouton "ver más" reste visible sur tous les écrans mobiles */
+    .ver-mas-btn {
+        padding: 8px 14px;
     }
 }

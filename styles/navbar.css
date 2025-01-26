@@ -61,7 +61,30 @@
     color: #fff;
 }
 
-/* Généralement Responsive pour les écrans inférieurs à 1116px */
+/* Formulaire de recherche */
+#search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrer le formulaire horizontalement */
+}
+
+#search-input {
+    width: 200px;
+    border-radius: 20px;
+    margin-right: 10px;
+    padding: 0.5rem;
+}
+
+#search-input:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+#search-form button {
+    border-radius: 20px;
+}
+
+/* Navbar ajustement pour les petits écrans */
 @media (max-width: 1116px) {
     .navbar {
         padding: 0.8rem 1rem;
@@ -80,21 +103,77 @@
         font-size: 1rem;
         padding: 0.6rem;
     }
+
+    #search-input {
+        width: 150px;
+    }
 }
 
-/* Cacher le texte '¡Sin Filtro!' sur les petits écrans */
+/* Pour les très petits écrans (moins de 768px) */
 @media (max-width: 768px) {
     .sin-filtro {
         display: none;
     }
 
-    /* Réduire la taille de "La Vida Hispánica" */
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .navbar-brand img {
+        width: 40px; /* Réduction de la taille du logo */
+    }
+
+    /* Réduire la taille du formulaire de recherche */
+    #search-form {
+        width: 100%; /* Utiliser toute la largeur de l'écran */
+        justify-content: center; /* Centrer */
+        margin-top: 10px;
+    }
+
+    #search-input {
+        width: 80%; /* Largeur plus grande mais pas totale */
+        font-size: 0.85rem;
+    }
+
+    /* Adapter la taille du bouton */
+    .btn-outline-light {
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* Pour les écrans très petits (moins de 576px) */
+@media (max-width: 576px) {
+    #search-input {
+        width: 100%;
+        font-size: 0.75rem;
+    }
+
+    /* Adapter les liens de navigation */
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    /* Ajuster la taille du logo et du texte de la navbar */
     .navbar-brand {
         font-size: 1rem; /* Réduction de la taille de police */
     }
 
     .navbar-brand img {
-        width: 40px; /* Réduction de la taille du logo */
+        width: 35px; /* Réduction du logo */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Changer la direction des éléments en colonne */
+        text-align: center;
+    }
+
+    #search-form {
+        margin-top: 10px;
+    }
+
+    #search-form input,
+    #search-form button {
+        width: 100%; /* Formulaire de recherche qui occupe toute la largeur */
     }
 }
 
