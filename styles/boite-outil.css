@@ -217,6 +217,39 @@
         max-width: 90%;
         font-size: 1.1rem;
     }
+
+    /* Style pour la description avec un bouton "ver más" */
+    .book-description {
+        max-height: 30px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: max-height 0.3s ease;
+    }
+
+    /* Style du bouton "ver más" visible uniquement sur petits écrans */
+    .ver-mas-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: background-color 0.3s ease;
+    }
+
+    .ver-mas-btn:hover {
+        background-color: #0056b3;
+    }
+}
+
+/* Masquer le bouton "ver más" pour les écrans plus grands */
+@media (min-width: 769px) {
+    .ver-mas-btn {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -244,5 +277,10 @@
 
     .book-section {
         font-size: 1rem;
+    }
+
+    /* Afficher le bouton "ver más" uniquement sur petits écrans */
+    .ver-mas-btn {
+        display: inline-block;
     }
 }

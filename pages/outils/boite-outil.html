@@ -22,7 +22,7 @@
     <script src="https://kyliancourel.github.io/lavidahispanica/scripts/navbar.js"></script> <!-- Chemin corrigé -->
     <script src="https://kyliancourel.github.io/lavidahispanica/scripts/footer.js"></script> <!-- Chemin corrigé -->
     <script src="https://kyliancourel.github.io/lavidahispanica/scripts/fade.js"></script>
-
+    <script src="https://kyliancourel.github.io/lavidahispanica/scripts/vermas.js"></script>
     <!-- Navbar -->
     <div id="navbar-container"></div> <!-- Navbar sera injectée ici par navbar.js -->
 
@@ -41,18 +41,18 @@
             <div class="content-section">
                 <h2>Conseils</h2>
                 <ul>
-                    <li>Créer un groupe de classe pour une bonne communication.</li>
-                    <li>Former des groupes de travail.</li>
-                    <li>Mettre ses appareils en espagnol pour apprendre du vocabulaire.</li>
-                    <li>Regarder des vidéos en VO avec sous-titres.</li>
-                    <li>Lire des livres en espagnol pour penser dans la langue.</li>
-                    <li>Poser des questions en classe.</li>
-                    <li>Participer activement à l'oral.</li>
-                    <li>Interagir avec des étudiants Erasmus espagnols.</li>
-                    <li>Aller au tutorat pour progresser.</li>
-                    <li>Dialoguer avec le professeur ou les anciens étudiants.</li>
-                    <li>Utiliser le blog pour poser des questions.</li>
-                    <li>Prendre l'air pour se recentrer.</li>
+                    <li>- Créer un groupe de classe pour une bonne communication.</li>
+                    <li>- Former des groupes de travail.</li>
+                    <li>- Mettre ses appareils en espagnol pour apprendre du vocabulaire.</li>
+                    <li>- Regarder des vidéos en VO avec sous-titres.</li>
+                    <li>- Lire des livres en espagnol pour penser dans la langue.</li>
+                    <li>- Poser des questions en classe.</li>
+                    <li>- Participer activement à l'oral.</li>
+                    <li>- Interagir avec des étudiants Erasmus espagnols.</li>
+                    <li>- Aller au tutorat pour progresser.</li>
+                    <li>- Dialoguer avec le professeur ou les anciens étudiants.</li>
+                    <li>- Utiliser le blog pour poser des questions.</li>
+                    <li>- Prendre l'air pour se recentrer.</li>
                 </ul>
             </div>
         </div>
@@ -67,11 +67,15 @@
                         <img src="https://kyliancourel.github.io/lavidahispanica/IMAGES/couvertures/A-sangre-y-fuego.jpg"
                             alt="A sangre y fuego - Page de couverture" class="book-image">
                         <p class="book-description">
-                            <i>A sangre y fuego</i> reúne relatos considerados entre lo mejor escrito sobre la
-                            Guerra Civil española. Redactados por Manuel Chaves Nogales entre 1936 y 1937, et basés
-                            en faits réels, retracent des épisodes vécus par des héros et martyrs de la guerre.
-                            ...
+                            <i>A sangre y fuego</i> es una colección de relatos sobre la guerra civil española, escritos
+                            por Chaves Nogales entre 1936 y 1937. Publicados inicialmente en revistas internacionales,
+                            estos relatos están basados en hechos reales y en personajes auténticos, reflejando las
+                            tragedias de la guerra. Chaves, un escritor y periodista liberal, dirigía el periódico Ahora
+                            hasta su exilio a finales de 1936. Con una mirada compasiva y una sorprendente objetividad,
+                            A sangre y fuego se presenta como una de las narraciones más inteligentes y profundas sobre
+                            el conflicto, consolidándose como un clásico de la literatura española.
                         </p>
+                        <button class="ver-mas-btn" onclick="toggleDescription()">Ver más</button>
                     </div>
                     <div class="buy-buttons-container">
                         <a href="https://www.casadellibro.com/libro-a-sangre-y-fuego/9788415625575/2131864"
@@ -79,31 +83,33 @@
                     </div>
                 </div>
             </div>
-            <div class="content-section">
-                <h2>Œuvres littéraires latino-américaines</h2>
-                <div id="file-2">
-                    <h4>Cortejo de sombras</h4>
-                    <div class="content-wrapper">
-                        <div class="book-section-container">
-                            <img src="https://kyliancourel.github.io/lavidahispanica/IMAGES/couvertures/Cortejo-de-sombras.png"
-                                alt="Cortejo de sombras - Page de couverture" class="book-image">
-                            <p class="book-description">
-                                <i>Cortejo de sombras</i> reúne relatos considerados entre lo mejor escrito sobre la
-                                Guerra Civil española.
-                                Redactados por Manuel Chaves Nogales entre 1936 y 1937, et basés en faits réels,
-                                retracent des épisodes vécus
-                                par des héros et martyrs de la guerre.
-                                ...
-                            </p>
-                        </div>
-                        <div class="buy-buttons-container">
-                            <a href="https://www.casadellibro.com/libro-cortejo-de-sombras/9788481096910/1177313?srsltid=AfmBOor3ZdsZDcQDcMoe0M38iHjWhwigxOp0jfWtd1Nt3PJ0UqUK5hMa"
-                                class="buy-button" target="_blank">Acheter</a>
-                        </div>
+            <div id="file-2">
+                <h4>Cortejo de sombras</h4>
+                <div class="content-wrapper">
+                    <div class="book-section-container">
+                        <img src="https://kyliancourel.github.io/lavidahispanica/IMAGES/couvertures/Cortejo-de-sombras.png"
+                            alt="Cortejo de sombras - Page de couverture" class="book-image">
+                        <p class="book-description">
+                            <i>Tamoga</i> es el escenario de historias de desesperanza y
+                            transformación. Es el lugar donde Mortes, un comerciante en fuga, busca su final; donde
+                            Sacramento Andreini pierde la cordura tras la muerte de su esposo; y donde Palonzo,
+                            huérfano y criado como un animal, encuentra un hogar en la vieja Luzdivina. Es también
+                            el destino de Celso, un sastre que, arrastrado por la guerra, parte hacia un destino
+                            fatal. Estos relatos se entrelazan en Cortejo de sombras, una obra que, tras más de tres
+                            décadas guardada, nos revela una voz atemporal y desgarradora, representando la destreza
+                            literaria de Julián Ríos, uno de los escritores más impactantes de la narrativa
+                            española.
+                        </p>
+                        <button class="read-more-btn" id="read-more-btn">Ver más</button>
+                    </div>
+                    <div class="buy-buttons-container">
+                        <a href="https://www.casadellibro.com/libro-cortejo-de-sombras/9788481096910/1177313?srsltid=AfmBOor3ZdsZDcQDcMoe0M38iHjWhwigxOp0jfWtd1Nt3PJ0UqUK5hMa"
+                            class="buy-button" target="_blank">Acheter</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
     <!-- Section Œuvres littéraires latino-américaines -->
     <div class="content-section">
@@ -115,10 +121,16 @@
                     <img src="https://kyliancourel.github.io/lavidahispanica/IMAGES/couvertures/El-ruido-de-las-cosas-al-caer-Juan-Gabriel-Vasquez.png"
                         alt="Cien años de soledad - Page de couverture" class="book-image">
                     <p class="book-description">
-                        <i>Cien años de soledad</i> de Gabriel García Márquez es una obra maestra de la literatura universal. 
-                        Este libro narra la historia de la familia Buendía a lo largo de varias generaciones en el pueblo ficticio 
-                        de Macondo, explorando temas como el realismo mágico, el amor y el destino.
-                        ...
+                        <i>El ruido de las cosas al caer</i> es una novela llena de suspense y una radiografía profunda
+                        de
+                        una generación atrapada por el miedo. Ganadora de varios premios internacionales, incluidos
+                        el Premio Alfaguara de Novela 2011 y el IMPAC International Dublin Literary Award 2014,
+                        cuenta la historia de Antonio Yammara, quien, al conocer a Ricardo Laverde, se siente
+                        atraído por un misterio que envuelve su vida. Tras el asesinato de Laverde, Yammara se
+                        obsesiona con resolver el enigma, lo que lo lleva a investigar los oscuros años setenta,
+                        cuando el narcotráfico en Colombia puso al país y al mundo al borde del abismo. La extraña
+                        fuga de un hipopótamo, relacionado con Pablo Escobar, desata la necesidad de Yammara de
+                        contar su historia.
                     </p>
                 </div>
                 <div class="buy-buttons-container">
@@ -321,7 +333,8 @@
                     <img src="https://kyliancourel.github.io/lavidahispanica/IMAGES/couvertures/Sintaxis-de-la-lengua-espanola.png"
                         alt="Sintaxis de la lengua española - Page de couverture" class="book-image">
                     <p class="book-description">
-                        <i>Sintaxis (VOX - Lengua Española - Manuales prácticos)</i> est un manuel complet qui offre une 
+                        <i>Sintaxis (VOX - Lengua Española - Manuales prácticos)</i> est un manuel complet qui offre
+                        une
                         explication détaillée de la syntaxe de l'espagnol pour les apprenants de tout niveau.
                     </p>
                 </div>
@@ -331,9 +344,9 @@
                     <a href="https://www.casadellibro.com/" class="buy-button" target="_blank">Acheter</a>
                 </div>
             </div>
-        </div>        
+        </div>
     </div>
-    
+
     <div class="content-section">
         <h2>Traduction</h2>
         <div id="file-1">
