@@ -139,11 +139,11 @@
     margin-top: 20px; /* Ajout de marges */
 }
 
-/* Style des boutons "Lire" et "Acheter" */
+/* Style des boutons "Buy" */
 .buy-button {
     display: inline-block;
     padding: 12px 24px;
-    background: linear-gradient(135deg, #007bff, #0056b3);
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Bleu dégradé */
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
@@ -166,6 +166,29 @@
     transform: scale(1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), inset 0 -2px 4px rgba(0, 0, 0, 0.2);
     color: #ffebd8;
+}
+
+/* Style du bouton "ver más" */
+.ver-mas-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;  /* Couleur verte */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.ver-mas-btn:hover {
+    background-color: #218838;  /* Teinte plus foncée de vert */
+}
+
+.ver-mas-btn:active {
+    background-color: #1e7e34;  /* Teinte encore plus foncée */
 }
 
 /* Réglages Responsives */
@@ -226,29 +249,9 @@
         transition: max-height 0.3s ease;
     }
 
-    /* Style du bouton "ver más" visible uniquement sur petits écrans */
+    /* Affichage du bouton "ver más" uniquement sur petits écrans */
     .ver-mas-btn {
         display: inline-block;
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: white;
-        border: none;
-        border-radius: 25px;
-        font-size: 1.1rem;
-        cursor: pointer;
-        margin-top: 10px;
-        transition: background-color 0.3s ease;
-    }
-
-    .ver-mas-btn:hover {
-        background-color: #0056b3;
-    }
-}
-
-/* Masquer le bouton "ver más" pour les écrans plus grands */
-@media (min-width: 769px) {
-    .ver-mas-btn {
-        display: none;
     }
 }
 
@@ -277,10 +280,5 @@
 
     .book-section {
         font-size: 1rem;
-    }
-
-    /* Afficher le bouton "ver más" uniquement sur petits écrans */
-    .ver-mas-btn {
-        display: inline-block;
     }
 }
