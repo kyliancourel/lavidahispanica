@@ -1,0 +1,169 @@
+{
+    "pages": [
+      {
+        "title": "Annee 1",
+        "url": "/pages/annees/annee1.html",
+        "type": "page"
+      },
+      {
+        "title": "Annee 2",
+        "url": "/pages/annees/annee2.html",
+        "type": "page"
+      },
+      {
+        "title": "Annee 3",
+        "url": "/pages/annees/annee3.html",
+        "type": "page"
+      },
+      {
+        "title": "Licence",
+        "url": "/pages/autres/licence.html",
+        "type": "page"
+      },
+      {
+        "title": "Master MEEF",
+        "url": "/pages/autres/master-meef.html",
+        "type": "page"
+      },
+      {
+        "title": "Organisation",
+        "url": "/pages/autres/organisation.html",
+        "type": "page"
+      },
+      {
+        "title": "Besoin d'aide",
+        "url": "/pages/outils/besoin-aide.html",
+        "type": "page"
+      },
+      {
+        "title": "Boîte à outils",
+        "url": "/pages/outils/boite-outil.html",
+        "type": "page"
+      },
+      {
+        "title": "Vidéos utiles",
+        "url": "/pages/outils/videos-utiles.html",
+        "type": "page"
+      },
+      {
+        "title": "Erasmus",
+        "url": "/pages/erasmus/erasmus.html",
+        "type": "page"
+      }
+    ],
+    "pdfs": [
+      {
+        "title": "Les différents types de temps",
+        "url": "/pdfs/1-Les-differents-types-de-temps.pdf",
+        "type": "pdf"
+      },
+      {
+        "title": "Equilibrer ses 4 types de temps",
+        "url": "/pdfs/2-Equilibrer-ses-4-types-de-temps.pdf",
+        "type": "pdf"
+      },
+      {
+        "title": "Organisation de ton planning",
+        "url": "/pdfs/3-Organisation-de-ton-planning.pdf",
+        "type": "pdf"
+      },
+      {
+        "title": "Quantifier son temps de travail",
+        "url": "/pdfs/4-Quantifier-son-temps-de-travail.pdf",
+        "type": "pdf"
+      },
+      {
+        "title": "Travailler par priorité",
+        "url": "/pdfs/5-Travailler-par-priorité.pdf",
+        "type": "pdf"
+      },
+      {
+        "title": "Livret des destinations 24-25 Espagnol",
+        "url": "/pdfs/Livret-des-destinations-24-25-Espagnol.pdf",
+        "type": "pdf"
+      }
+    ],
+    "images": [
+      {
+        "title": "A sangre y fuego",
+        "url": "/IMAGES/couvertures/A-sangre-y-fuego.jpg",
+        "type": "image"
+      },
+      {
+        "title": "Caperucita en Manhattan",
+        "url": "/IMAGES/couvertures/Caperucita-en-Manhattan.png",
+        "type": "image"
+      },
+      {
+        "title": "Cortejo de sombras",
+        "url": "/IMAGES/couvertures/Cortejo-de-sombras.png",
+        "type": "image"
+      },
+      {
+        "title": "Droit de conquête et droits des Indiens",
+        "url": "/IMAGES/couvertures/Droit-de-conquete-et-droits-des-Indiens.png",
+        "type": "image"
+      },
+      {
+        "title": "El ruido de las cosas al caer",
+        "url": "/IMAGES/couvertures/El-ruido-de-las-cosas-al-caer-Juan-Gabriel-Vasquez.png",
+        "type": "image"
+      },
+      {
+        "title": "Grammaire d'usage de l'espagnol contemporain",
+        "url": "/IMAGES/couvertures/Grammaire-d-usage-de-l-espagnol-contemporain-Pierre-Gerboin.png",
+        "type": "image"
+      },
+      {
+        "title": "Histoire de l'Espagne contemporaine",
+        "url": "/IMAGES/couvertures/Histoire-de-l-Espagne-contemporaine-1808-a-nos-jours.png",
+        "type": "image"
+      },
+      {
+        "title": "La Casa de Bernarda Alba",
+        "url": "/IMAGES/couvertures/La-Casa-de-Bernarda-Alba.png",
+        "type": "image"
+      },
+      {
+        "title": "La nueva gramática básica de la lengua española",
+        "url": "/IMAGES/couvertures/La-nueva-gramatica-basica-de-la-lengua-espanola.png",
+        "type": "image"
+      },
+      {
+        "title": "Les Indes Fourbes",
+        "url": "/IMAGES/couvertures/Les-Indes-Fourbes.png",
+        "type": "image"
+      },
+      {
+        "title": "Los Siete Mitos De La Conquista",
+        "url": "/IMAGES/couvertures/Los-Siete-Mitos-De-La-Conquista.png",
+        "type": "image"
+      },
+      {
+        "title": "Maitriser la grammaire espagnole",
+        "url": "/IMAGES/couvertures/Maitriser-la-grammaire-espagnole.png",
+        "type": "image"
+      },
+      {
+        "title": "Malas Compañías",
+        "url": "/IMAGES/couvertures/Malas-Compañías.png",
+        "type": "image"
+      },
+      {
+        "title": "Manual de la nueva gramática de la lengua española",
+        "url": "/IMAGES/couvertures/Manual-de-la-nueva-gramatica-de-la-lengua-espanola.png",
+        "type": "image"
+      },
+      {
+        "title": "Orígenes y Desarollo Guerra Santa",
+        "url": "/IMAGES/couvertures/Orígenes-y-Desarollo-Guerra-Santa.png",
+        "type": "image"
+      },
+      {
+        "title": "Sintaxis de la lengua española",
+        "url": "/IMAGES/couvertures/Sintaxis-de-la-lengua-espanola.png",
+        "type": "image"
+      }
+    ]
+  }
+  

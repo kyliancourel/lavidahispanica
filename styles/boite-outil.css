@@ -1,12 +1,4 @@
-/* Styles Généraux */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
-}
+/* Boîte à outils - Styles spécifiques à la page */
 
 /* Section Héro */
 .hero-section {
@@ -62,6 +54,14 @@ body {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
+.content-section img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
 .content-section h2 {
     font-size: 2.2rem;
     color: #007bff;
@@ -70,16 +70,93 @@ body {
     text-align: center;
 }
 
-/* Description avec "ver más" */
-.book-description {
-    max-height: 4.8em; /* Trois lignes avec overflow */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: 1.6;
-    transition: max-height 0.3s ease;
+.content-section h3 {
+    font-size: 1.8rem;
+    color: #005bb5;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
-/* Conteneur des boutons */
+.content-section h4 {
+    font-size: 1.5rem;
+    color: #0056b3;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.content-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.content-section ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Styles spécifiques pour les fichiers */
+#file-1, #file-2 {
+    background-color: #d0e8ff;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#file-2 {
+    background-color: #ffebd8;
+}
+
+/* Boîte à outils - Styles spécifiques à la page */
+
+/* Section Book avec image et texte à droite */
+.book-section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.book-section-container img {
+    width: 180px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+/* Description du livre */
+.book-description {
+    max-height: 100px;  /* Limite la hauteur du texte visible */
+    overflow: hidden;   /* Masque le texte excédentaire */
+    transition: max-height 0.3s ease;  /* Animation pour l'expansion */
+}
+
+/* Style du bouton "ver más" */
+.ver-mas-btn {
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #f39c12, #d35400);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.ver-mas-btn:hover {
+    background: linear-gradient(135deg, #d35400, #f39c12);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ver-mas-btn:active {
+    transform: scale(1);
+}
+
+/* Conteneur pour les boutons Buy */
 .buy-buttons-container {
     display: flex;
     justify-content: center;
@@ -87,14 +164,14 @@ body {
     margin-top: 20px;
 }
 
-/* Bouton "Buy" */
+/* Style des boutons "Acheter" */
 .buy-button {
     display: inline-block;
-    padding: 14px 28px;
+    padding: 12px 24px;
     background: linear-gradient(135deg, #007bff, #0056b3);
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     border-radius: 25px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), inset 0 -3px 6px rgba(0, 0, 0, 0.2);
@@ -116,46 +193,85 @@ body {
     color: #ffebd8;
 }
 
+
 /* Bouton "ver más" */
-.ver-mas-btn {
-    display: none; /* Masqué par défaut */
+.ver-mas-button {
+    display: none;
+    margin-top: 10px;
     padding: 8px 16px;
-    background-color: #6c757d;
+    font-size: 0.9rem;
+    font-weight: bold;
     color: white;
+    background: linear-gradient(135deg, #f39c12, #d35400);
     border: none;
     border-radius: 20px;
-    font-size: 0.9rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    text-align: center;
-    transition: background-color 0.3s ease;
-    opacity: 0.8;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.ver-mas-btn:hover {
-    background-color: #5a6268;
+.ver-mas-button:hover {
+    background: linear-gradient(135deg, #d35400, #f39c12);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ver-mas-button:active {
+    transform: scale(1);
 }
 
 /* Réglages Responsives */
+@media (max-width: 1024px) {
+    .container {
+        padding: 40px 20px;
+    }
+
+    .content-section {
+        padding: 20px;
+    }
+
+    .buy-button {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+
+    .book-section-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .book-section-container img {
+        margin-bottom: 15px;
+        width: 160px;
+    }
+
+    .book-section {
+        max-width: 80%;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 30px 15px;
     }
 
     .buy-button {
-        font-size: 1rem;
-        padding: 10px 20px;
+        font-size: 0.9rem;
+        padding: 8px 16px;
     }
 
-    .book-description {
-        max-height: 6.4em; /* Ajustement pour plus de texte sur écrans moyens */
+    .book-section-container img {
+        margin-bottom: 15px;
+        width: 150px;
     }
 
-    .ver-mas-btn {
-        display: inline-block; /* Visible uniquement sur petits écrans */
+    .book-section {
+        max-width: 90%;
+        font-size: 1.1rem;
     }
 }
 
-@media (max-width: 468px) {
+@media (max-width: 480px) {
     .hero-section {
         padding: 60px 15px;
     }
@@ -170,22 +286,20 @@ body {
     }
 
     .buy-button {
-        font-size: 0.9rem;
-        padding: 8px 16px;
+        font-size: 0.8rem;
+        padding: 6px 12px;
     }
 
-    .book-description {
-        max-height: 4.8em; /* Trois lignes pour les écrans très petits */
+    .book-section-container img {
+        width: 130px;
     }
 
-    .ver-mas-btn {
-        display: inline-block;
-        padding: 8px 14px;
+    .book-section {
+        font-size: 1rem;
     }
-}
 
-@media (min-width: 469px) {
-    .ver-mas-btn {
-        display: none !important; /* Forcer le masquage sur écrans larges */
+    /* Activation du bouton "ver más" */
+    .ver-mas-button {
+        display: block;
     }
 }
