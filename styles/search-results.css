@@ -1,0 +1,19 @@
+#search-results {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+#search-results p {
+    margin: 5px 0;
+}
+
+#search-results a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+#search-results a:hover {
+    text-decoration: underline;
+}

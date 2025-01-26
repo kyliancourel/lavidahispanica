@@ -4,14 +4,23 @@ document.getElementById("search-form").addEventListener("submit", function (e) {
     // Récupérer la valeur du champ de recherche
     let query = document.getElementById("search-input").value.toLowerCase();
 
+    // Ajouter dynamiquement le lien vers le fichier CSS si ce n'est pas déjà fait
+    if (!document.getElementById("search-results-styles")) {
+        let link = document.createElement("link");
+        link.id = "search-results-styles";
+        link.rel = "stylesheet";
+        link.href = "styles/search-results.css"; // Chemin vers ton fichier CSS
+        document.head.appendChild(link); // Ajouter le lien au <head> du document
+    }
+
     // Charger le fichier index.json
-    fetch("https://kyliancourel.github.io/lavidahispanica/index.json")
+    fetch("/index.json")
         .then(response => response.json())
         .then(data => {
             // Filtrer les pages qui contiennent la recherche dans leur titre ou mots-clés
             let results = data.pages.filter(page => 
                 page.title.toLowerCase().includes(query) || 
-                page.keywords.toLowerCase().includes(query)
+                (page.keywords && page.keywords.toLowerCase().includes(query)) // Assurer que "keywords" existe
             );
 
             // Vérifier si le conteneur des résultats existe déjà, sinon le créer
@@ -19,7 +28,6 @@ document.getElementById("search-form").addEventListener("submit", function (e) {
             if (!resultsContainer) {
                 resultsContainer = document.createElement("div");
                 resultsContainer.id = "search-results";
-                resultsContainer.style.marginTop = "20px";
                 document.body.appendChild(resultsContainer); // Ajouter le conteneur au body
             } else {
                 resultsContainer.innerHTML = ""; // Vider les anciens résultats
