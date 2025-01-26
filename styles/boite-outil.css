@@ -107,8 +107,6 @@
     background-color: #ffebd8;
 }
 
-/* Boîte à outils - Styles spécifiques à la page */
-
 /* Section Book avec image et texte à droite */
 .book-section-container {
     display: flex;
@@ -193,33 +191,6 @@
     color: #ffebd8;
 }
 
-
-/* Bouton "ver más" */
-.ver-mas-button {
-    display: none;
-    margin-top: 10px;
-    padding: 8px 16px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: white;
-    background: linear-gradient(135deg, #f39c12, #d35400);
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.ver-mas-button:hover {
-    background: linear-gradient(135deg, #d35400, #f39c12);
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.ver-mas-button:active {
-    transform: scale(1);
-}
-
 /* Réglages Responsives */
 @media (max-width: 1024px) {
     .container {
@@ -245,8 +216,9 @@
         width: 160px;
     }
 
-    .book-section {
-        max-width: 80%;
+    .ver-mas-btn {
+        font-size: 0.9rem;
+        padding: 6px 12px;
     }
 }
 
@@ -256,7 +228,7 @@
     }
 
     .buy-button {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         padding: 8px 16px;
     }
 
@@ -265,9 +237,9 @@
         width: 150px;
     }
 
-    .book-section {
-        max-width: 90%;
-        font-size: 1.1rem;
+    .ver-mas-btn {
+        font-size: 0.8rem;
+        padding: 5px 10px;
     }
 }
 
@@ -286,7 +258,7 @@
     }
 
     .buy-button {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         padding: 6px 12px;
     }
 
@@ -294,20 +266,14 @@
         width: 130px;
     }
 
-    .book-section {
-        font-size: 1rem;
-    }
-
-    /* Activation du bouton "ver más" */
-    .ver-mas-button {
-        display: block;
+    .ver-mas-btn {
+        font-size: 0.75rem;
+        padding: 4px 8px;
     }
 }
 
-/* Cacher le bouton "ver más" sur les écrans plus larges */
-@media (min-width: 469px) {
-    .ver-mas-button {
-        display: none !important; 
+@media (min-width: 1024px) {
+    .ver-mas-btn {
+        display: none; /* Cache le bouton sur les grands écrans */
     }
 }
-
