@@ -95,7 +95,6 @@
 }
 
 /* Styles spécifiques pour les fichiers */
-/* Styles spécifiques pour les fichiers */
 #file-1, #file-2 {
     background-color: #d0e8ff;
     padding: 15px;
@@ -198,11 +197,6 @@
         padding: 10px 18px;
     }
 
-    .book-description {
-        max-height: none; /* Supprime la limite de hauteur */
-        overflow: visible; /* Affiche tout le contenu */
-    }
-
     .book-section-container {
         flex-direction: column;
         text-align: center;
@@ -216,7 +210,6 @@
     .ver-mas-btn {
         font-size: 0.9rem;
         padding: 6px 12px;
-        display: none; /* Cache le bouton sur les grands écrans */
     }
 }
 
@@ -270,7 +263,13 @@
     }
 }
 
+/* Grands écrans */
 @media (min-width: 1024px) {
+    .book-description {
+        max-height: none; /* Supprime la limite de hauteur */
+        overflow: visible; /* Affiche tout le contenu */
+    }
+
     .ver-mas-btn {
         display: none; /* Cache le bouton sur les grands écrans */
     }
