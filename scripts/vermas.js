@@ -1,18 +1,25 @@
+// Attendre que le DOM soit complètement chargé
 document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.ver-mas-btn').forEach((button) => {
-        button.addEventListener('click', () => {
-            const description = button.parentElement.querySelector('.book-description');
+    // Récupérer tous les boutons "Ver más"
+    const buttons = document.querySelectorAll('.ver-mas-btn');
+    
+    // Pour chaque bouton, ajouter un événement de clic
+    buttons.forEach((button) => {
+        button.addEventListener('click', function () {
+            // Trouver la description du livre associée
+            const description = this.parentElement.querySelector('.book-description');
             
-            // Utilisation de getComputedStyle pour obtenir la hauteur actuelle
+            // Vérifier la hauteur actuelle du texte
             const currentMaxHeight = window.getComputedStyle(description).maxHeight;
-
-            // Vérifier si la description est actuellement réduite
+            
             if (currentMaxHeight === '100px' || currentMaxHeight === 'none') {
-                description.style.maxHeight = description.scrollHeight + "px"; // Développer la description
-                button.textContent = 'Ver menos'; // Modifier le texte du bouton
+                // Si l'élément est réduit, développer
+                description.style.maxHeight = description.scrollHeight + 'px'; // Afficher toute la description
+                this.textContent = 'Ver menos'; // Changer le texte du bouton
             } else {
+                // Sinon, réduire
                 description.style.maxHeight = '100px'; // Réduire la description
-                button.textContent = 'Ver más'; // Modifier le texte du bouton
+                this.textContent = 'Ver más'; // Restaurer le texte du bouton
             }
         });
     });
