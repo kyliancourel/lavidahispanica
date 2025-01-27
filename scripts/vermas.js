@@ -16,19 +16,21 @@ document.addEventListener('DOMContentLoaded', function () {
                 description.style.maxHeight = '100px';
                 this.textContent = 'Ver más'; // Modifier le texte du bouton
             }
-            
-            // Vérification pour cacher le bouton si la description est complètement dépliée sur grands écrans
-            if (window.innerWidth >= 1024 && description.scrollHeight === description.offsetHeight) {
+
+            // Vérifier si la description est complètement dépliée et cacher le bouton
+            if (description.scrollHeight === description.offsetHeight) {
                 this.style.display = 'none'; // Masquer le bouton si la description est complètement visible
+            } else {
+                this.style.display = ''; // Assurez-vous que le bouton est visible si nécessaire
             }
         });
     });
 
-    // Cacher le bouton "Ver más" sur les grands écrans si la description est totalement dépliée
+    // Fonction pour vérifier l'état des descriptions au chargement de la page
     const checkDescriptions = () => {
         document.querySelectorAll('.book-description').forEach((description) => {
             const button = description.parentElement.querySelector('.ver-mas-btn');
-            if (window.innerWidth >= 1024 && description.scrollHeight === description.offsetHeight) {
+            if (description.scrollHeight === description.offsetHeight) {
                 button.style.display = 'none'; // Masquer le bouton si la description est complètement visible
             } else {
                 button.style.display = ''; // Afficher le bouton si nécessaire
@@ -36,7 +38,9 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     };
 
-    // Vérifier la taille de l'écran et ajuster au démarrage et lors du redimensionnement
+    // Vérifier l'état initial des descriptions au chargement de la page
     checkDescriptions();
+    
+    // Ajouter un écouteur pour vérifier l'état des descriptions lors du redimensionnement
     window.addEventListener('resize', checkDescriptions);
 });
