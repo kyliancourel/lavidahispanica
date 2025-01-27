@@ -95,6 +95,7 @@
 }
 
 /* Styles spécifiques pour les fichiers */
+/* Styles spécifiques pour les fichiers */
 #file-1, #file-2 {
     background-color: #d0e8ff;
     padding: 15px;
@@ -172,7 +173,6 @@
     font-size: 1.1rem;
     font-weight: bold;
     border-radius: 25px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), inset 0 -3px 6px rgba(0, 0, 0, 0.2);
     text-align: center;
     transition: all 0.3s ease;
 }
@@ -180,14 +180,6 @@
 .buy-button:hover {
     background: linear-gradient(135deg, #0056b3, #007bff);
     transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), inset 0 -4px 8px rgba(0, 0, 0, 0.3);
-    color: #ffebd8;
-}
-
-.buy-button:active {
-    background: linear-gradient(135deg, #003f8a, #0056b3);
-    transform: scale(1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), inset 0 -2px 4px rgba(0, 0, 0, 0.2);
     color: #ffebd8;
 }
 
@@ -206,6 +198,11 @@
         padding: 10px 18px;
     }
 
+    .book-description {
+        max-height: none; /* Supprime la limite de hauteur */
+        overflow: visible; /* Affiche tout le contenu */
+    }
+
     .book-section-container {
         flex-direction: column;
         text-align: center;
@@ -219,6 +216,7 @@
     .ver-mas-btn {
         font-size: 0.9rem;
         padding: 6px 12px;
+        display: none; /* Cache le bouton sur les grands écrans */
     }
 }
 
