@@ -2,9 +2,12 @@
 document.querySelectorAll('.ver-mas-btn').forEach((button) => {
     button.addEventListener('click', () => {
         const description = button.parentElement.querySelector('.book-description');
+        
+        // Utilisation de getComputedStyle pour obtenir la hauteur actuelle
+        const currentMaxHeight = window.getComputedStyle(description).maxHeight;
 
         // Vérifier si la description est actuellement réduite
-        if (description.style.maxHeight === '100px' || !description.style.maxHeight) {
+        if (currentMaxHeight === '100px' || currentMaxHeight === 'none') {
             description.style.maxHeight = description.scrollHeight + "px"; // Développer la description
             button.textContent = 'Ver menos'; // Modifier le texte du bouton
         } else {
