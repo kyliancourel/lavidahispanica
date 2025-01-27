@@ -37,14 +37,14 @@ document.addEventListener('DOMContentLoaded', function () {
         if (description.scrollHeight <= description.offsetHeight) {
             // Vérifier la taille de l'écran pour décider de l'affichage du bouton
             if (window.innerWidth >= 1024) {
-                // Cacher le bouton sur les écrans plus grands si la description est visible
+                // Cacher le bouton sur les écrans larges si la description est complètement visible
                 button.style.display = 'none';
             } else {
-                // Afficher le bouton sur les petits écrans
+                // Afficher le bouton sur les petits écrans si la description est complètement visible
                 button.style.display = '';
             }
         } else {
-            // Si la description n'est pas complètement visible, afficher le bouton
+            // Si la description est partiellement visible, afficher le bouton
             button.style.display = '';
         }
     };
