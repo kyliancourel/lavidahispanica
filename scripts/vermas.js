@@ -1,26 +1,42 @@
-// Attendre que le DOM soit complètement chargé
 document.addEventListener('DOMContentLoaded', function () {
     // Récupérer tous les boutons "Ver más"
     const buttons = document.querySelectorAll('.ver-mas-btn');
     
-    // Pour chaque bouton, ajouter un événement de clic
     buttons.forEach((button) => {
         button.addEventListener('click', function () {
-            // Trouver la description du livre associée
             const description = this.parentElement.querySelector('.book-description');
-            
-            // Vérifier la hauteur actuelle du texte
             const currentMaxHeight = window.getComputedStyle(description).maxHeight;
-            
+
             if (currentMaxHeight === '100px' || currentMaxHeight === 'none') {
-                // Si l'élément est réduit, développer
-                description.style.maxHeight = description.scrollHeight + 'px'; // Afficher toute la description
-                this.textContent = 'Ver menos'; // Changer le texte du bouton
+                // Développer la description
+                description.style.maxHeight = description.scrollHeight + 'px';
+                this.textContent = 'Ver menos'; // Modifier le texte du bouton
             } else {
-                // Sinon, réduire
-                description.style.maxHeight = '100px'; // Réduire la description
-                this.textContent = 'Ver más'; // Restaurer le texte du bouton
+                // Réduire la description
+                description.style.maxHeight = '100px';
+                this.textContent = 'Ver más'; // Modifier le texte du bouton
+            }
+            
+            // Vérification pour cacher le bouton si la description est complètement dépliée sur grands écrans
+            if (window.innerWidth >= 1024 && description.scrollHeight === description.offsetHeight) {
+                this.style.display = 'none'; // Masquer le bouton si la description est complètement visible
             }
         });
     });
+
+    // Cacher le bouton "Ver más" sur les grands écrans si la description est totalement dépliée
+    const checkDescriptions = () => {
+        document.querySelectorAll('.book-description').forEach((description) => {
+            const button = description.parentElement.querySelector('.ver-mas-btn');
+            if (window.innerWidth >= 1024 && description.scrollHeight === description.offsetHeight) {
+                button.style.display = 'none'; // Masquer le bouton si la description est complètement visible
+            } else {
+                button.style.display = ''; // Afficher le bouton si nécessaire
+            }
+        });
+    };
+
+    // Vérifier la taille de l'écran et ajuster au démarrage et lors du redimensionnement
+    checkDescriptions();
+    window.addEventListener('resize', checkDescriptions);
 });
