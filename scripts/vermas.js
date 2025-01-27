@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             // Vérifier si la description est complètement dépliée et cacher le bouton
-            if (description.scrollHeight === description.offsetHeight) {
+            if (description.scrollHeight <= description.offsetHeight) {
                 this.style.display = 'none'; // Masquer le bouton si la description est complètement visible
             } else {
                 this.style.display = ''; // Assurez-vous que le bouton est visible si nécessaire
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const checkDescriptions = () => {
         document.querySelectorAll('.book-description').forEach((description) => {
             const button = description.parentElement.querySelector('.ver-mas-btn');
-            if (description.scrollHeight === description.offsetHeight) {
+            if (description.scrollHeight <= description.offsetHeight) {
                 button.style.display = 'none'; // Masquer le bouton si la description est complètement visible
             } else {
                 button.style.display = ''; // Afficher le bouton si nécessaire
