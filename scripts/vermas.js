@@ -1,4 +1,3 @@
-// Gestion indépendante des boutons "Ver más"
 document.querySelectorAll('.ver-mas-btn').forEach((button) => {
     button.addEventListener('click', () => {
         const description = button.parentElement.querySelector('.book-description');
