@@ -1,4 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Fonction pour vérifier la taille de la description et l'état du bouton
+    const updateButtonVisibility = () => {
+        document.querySelectorAll('.book-description').forEach((description) => {
+            const button = description.parentElement.querySelector('.ver-mas-btn');
+            
+            // Si la description est complètement visible selon la taille de l'écran
+            if (description.scrollHeight <= description.offsetHeight) {
+                button.style.display = 'none'; // Masquer le bouton si la description est entièrement visible
+            } else {
+                button.style.display = ''; // Afficher le bouton si la description est incomplète
+            }
+        });
+    };
+
     // Récupérer tous les boutons "Ver más"
     const buttons = document.querySelectorAll('.ver-mas-btn');
     
@@ -17,30 +31,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 this.textContent = 'Ver más'; // Modifier le texte du bouton
             }
 
-            // Vérifier si la description est complètement dépliée et cacher le bouton
-            if (description.scrollHeight <= description.offsetHeight) {
-                this.style.display = 'none'; // Masquer le bouton si la description est complètement visible
-            } else {
-                this.style.display = ''; // Assurez-vous que le bouton est visible si nécessaire
-            }
+            // Vérifier l'état du bouton après avoir cliqué
+            updateButtonVisibility();
         });
     });
 
-    // Fonction pour vérifier l'état des descriptions au chargement de la page
-    const checkDescriptions = () => {
-        document.querySelectorAll('.book-description').forEach((description) => {
-            const button = description.parentElement.querySelector('.ver-mas-btn');
-            if (description.scrollHeight <= description.offsetHeight) {
-                button.style.display = 'none'; // Masquer le bouton si la description est complètement visible
-            } else {
-                button.style.display = ''; // Afficher le bouton si nécessaire
-            }
-        });
-    };
-
-    // Vérifier l'état initial des descriptions au chargement de la page
-    checkDescriptions();
+    // Vérification initiale de l'état des descriptions au chargement de la page
+    updateButtonVisibility();
     
-    // Ajouter un écouteur pour vérifier l'état des descriptions lors du redimensionnement
-    window.addEventListener('resize', checkDescriptions);
+    // Vérifier l'état du bouton lors du redimensionnement de la fenêtre
+    window.addEventListener('resize', updateButtonVisibility);
 });
