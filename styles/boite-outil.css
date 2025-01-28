@@ -154,6 +154,11 @@
     transform: scale(1);
 }
 
+#no-btn-ver-mas {
+    max-height: none; /* Supprime la limite de hauteur */
+    overflow: visible; /* Affiche tout le contenu */
+}
+
 /* Conteneur pour les boutons Buy */
 .buy-buttons-container {
     display: flex;
