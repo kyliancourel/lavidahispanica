@@ -5,7 +5,7 @@
     text-align: center;
     padding: 80px 20px;
     border-bottom: 5px solid #003351; /* Plus discret */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.01);
     margin-bottom: 50px;
 }
 
