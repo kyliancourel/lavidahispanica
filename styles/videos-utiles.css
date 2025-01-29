@@ -3,11 +3,10 @@
     background-color: #004d73; /* Couleur plus sobre */
     color: white;
     text-align: center;
-    padding: 80px 30px;
-    border-bottom: 3px solid #003351; /* Plus discret */
+    padding: 80px 20px;
+    border-bottom: 5px solid #003351; /* Plus discret */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
-    margin-bottom: 60px;
-    border-radius: 0 0 20px 20px;
+    margin-bottom: 50px;
 }
 
 .hero-section img {
