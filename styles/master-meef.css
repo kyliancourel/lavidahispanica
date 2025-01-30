@@ -6,8 +6,8 @@
     --background-color: #f8f9fa;
     --footer-bg-color: #343a40;
     --footer-text-color: white;
-    --file1-bg-color: #ffd1dc; /* Rose pastel */
-    --file2-bg-color: #d1e8ff; /* Bleu pastel */
+    --file1-bg: #ffd1dc; /* Rose pastel */
+    --file2-bg: #c1e1c1; /* Vert pastel modifié */
 }
 
 /* Style global */
@@ -51,88 +51,40 @@ body {
     margin: 0 auto;
 }
 
-/* Master MEEF */
-.content-section-ressources {
-    padding: 30px 15px;
+/* Conteneur Principal */
+.container {
+    padding: 50px 20px;
+    margin: 0 auto;
 }
 
-.content-section-ressources h2 {
-    font-size: 2rem;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-}
-
-.content-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 30px;
-}
-
-.book-section-container {
-    flex: 1 1 45%;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.book-image {
-    max-width: 100%;
+/* Section Contenu */
+.content-section {
+    background-color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px auto;
+    transition: box-shadow 0.3s ease;
 }
 
-.buy-buttons-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
+.content-section:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-.buy-button {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 10px 20px;
-    margin: 5px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
+/* Styles spécifiques pour les fichiers */
+#file-1, #file-2 {
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.buy-button:hover {
-    background-color: var(--secondary-color);
-}
-
-.ver-mas-btn {
-    background-color: var(--secondary-color);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.ver-mas-btn:hover {
-    background-color: var(--primary-color);
-}
-
-/* Sections spécifiques avec couleurs pastel */
 #file-1 {
-    background-color: var(--file1-bg-color);
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--file1-bg);
 }
 
 #file-2 {
-    background-color: var(--file2-bg-color);
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--file2-bg);
 }
 
 /* Responsive Design */
@@ -143,16 +95,11 @@ body {
     .hero-section p {
         font-size: 1.1rem;
     }
-    .content-section-ressources {
-        padding: 20px 10px;
+    .container {
+        padding: 40px 20px;
     }
-    .content-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-    .book-section-container {
-        width: 80%;
-        margin: 0 auto;
+    .content-section {
+        padding: 20px;
     }
 }
 
@@ -166,16 +113,8 @@ body {
     .hero-section p {
         font-size: 1rem;
     }
-    .content-section-ressources {
-        padding: 20px 10px;
-    }
-    .book-section-container {
-        width: 90%;
-        margin: 0 auto;
-    }
-    .buy-button {
-        width: 100%;
-        margin: 5px 0;
+    .container {
+        padding: 30px 15px;
     }
 }
 
@@ -186,7 +125,7 @@ body {
     .hero-section p {
         font-size: 0.9rem;
     }
-    .buy-button {
-        padding: 12px 25px;
+    .container {
+        padding: 25px 10px;
     }
 }
