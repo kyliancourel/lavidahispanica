@@ -125,6 +125,34 @@ body {
     background-color: var(--file2-bg);
 }
 
+/* Conteneur pour les boutons Buy */
+.buy-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Style des boutons "Acheter" */
+.buy-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #17a2b8, #138496);
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.buy-button:hover {
+    background: linear-gradient(135deg, #138496, #17a2b8);
+    transform: scale(1.05);
+    color: #ffebd8;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .hero-section h1 {
