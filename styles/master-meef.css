@@ -6,7 +6,7 @@
     --background-color: #f8f9fa;
     --footer-bg-color: #343a40;
     --footer-text-color: white;
-    --file1-bg: #ffd1dc; /* Rose pastel */
+    --file1-bg: #d1ecff; /* Rose pastel */
     --file2-bg: #c1e1c1; /* Vert pastel modifié */
 }
 
@@ -59,7 +59,7 @@ body {
 
 /* Section Contenu */
 .content-section {
-    background-color: white;
+    background-color: #f8f9fa;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 30px;
@@ -69,6 +69,44 @@ body {
 
 .content-section:hover {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.content-section img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.content-section h2 {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content-section h3 {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.content-section h4 {
+    font-size: 1.5rem;
+    color:var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Section Book avec image et texte à droite */
+
+.book-section-container img {
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
 }
 
 /* Styles spécifiques pour les fichiers */
