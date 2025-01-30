@@ -1,11 +1,13 @@
 /* Variables globales pour les couleurs et styles */
 :root {
-    --primary-color: #17a2b8; /* Couleur bleue distinctive */
-    --secondary-color: #138496; /* Bleu foncé pour les accents */
+    --primary-color: #17a2b8;
+    --secondary-color: #138496;
     --text-color: #333;
     --background-color: #f8f9fa;
     --footer-bg-color: #343a40;
     --footer-text-color: white;
+    --file1-bg-color: #ffd1dc; /* Rose pastel */
+    --file2-bg-color: #d1e8ff; /* Bleu pastel */
 }
 
 /* Style global */
@@ -49,116 +51,142 @@ body {
     margin: 0 auto;
 }
 
-/* Image de construction */
-.construction-image {
-    max-width: 100%;
-    height: auto;
-    margin: 30px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Master MEEF */
+.content-section-ressources {
+    padding: 30px 15px;
 }
 
-.construction-image:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Message de construction */
-.content-section {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-}
-
-.content-section h2 {
+.content-section-ressources h2 {
     font-size: 2rem;
     color: var(--primary-color);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-.content-section p {
-    font-size: 1.1rem;
-    color: #555;
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.book-section-container {
+    flex: 1 1 45%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.book-image {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.buy-buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.buy-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.buy-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.ver-mas-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.ver-mas-btn:hover {
+    background-color: var(--primary-color);
+}
+
+/* Sections spécifiques avec couleurs pastel */
+#file-1 {
+    background-color: var(--file1-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#file-2 {
+    background-color: var(--file2-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    /* Tablettes et écrans moyens */
     .hero-section h1 {
         font-size: 2.2rem;
     }
-
     .hero-section p {
         font-size: 1.1rem;
     }
-
-    .construction-image {
-        margin: 20px auto;
+    .content-section-ressources {
+        padding: 20px 10px;
     }
-
-    .content-section h2 {
-        font-size: 1.8rem;
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .book-section-container {
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
 @media (max-width: 768px) {
-    /* Smartphones et petits écrans */
     .hero-section {
         padding: 60px 20px;
     }
-
     .hero-section h1 {
         font-size: 1.8rem;
     }
-
     .hero-section p {
         font-size: 1rem;
     }
-
-    .construction-image {
-        margin: 20px auto;
+    .content-section-ressources {
+        padding: 20px 10px;
     }
-
-    .content-section {
-        padding: 30px 15px;
+    .book-section-container {
+        width: 90%;
+        margin: 0 auto;
     }
-
-    .content-section h2 {
-        font-size: 1.6rem;
-    }
-
-    .content-section p {
-        font-size: 1rem;
+    .buy-button {
+        width: 100%;
+        margin: 5px 0;
     }
 }
 
 @media (max-width: 480px) {
-    /* Écrans très petits */
     .hero-section h1 {
         font-size: 1.6rem;
     }
-
     .hero-section p {
         font-size: 0.9rem;
     }
-
-    .construction-image {
-        margin: 15px auto;
-    }
-
-    .content-section {
-        padding: 25px 10px;
-    }
-
-    .content-section h2 {
-        font-size: 1.4rem;
-    }
-
-    .content-section p {
-        font-size: 0.9rem;
+    .buy-button {
+        padding: 12px 25px;
     }
 }
