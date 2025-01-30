@@ -102,7 +102,6 @@ body {
 }
 
 /* Section Book avec image et texte à droite */
-
 .book-section-container img {
     width: 180px;
     height: auto;
@@ -164,8 +163,11 @@ body {
     .container {
         padding: 40px 20px;
     }
-    .content-section {
-        padding: 20px;
+    .content-section-ressources img {
+        width: 150px;
+    }
+    .content-section-ressources h2 {
+        font-size: 2rem;
     }
 }
 
@@ -182,6 +184,12 @@ body {
     .container {
         padding: 30px 15px;
     }
+    .content-section-ressources img {
+        width: 130px;
+    }
+    .content-section-ressources h2 {
+        font-size: 1.8rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -193,5 +201,15 @@ body {
     }
     .container {
         padding: 25px 10px;
+    }
+    .content-section-ressources img {
+        width: 100px;
+    }
+    .content-section-ressources h2 {
+        font-size: 1.6rem;
+    }
+    .buy-button {
+        font-size: 1rem;
+        padding: 10px 20px;
     }
 }
