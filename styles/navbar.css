@@ -58,19 +58,22 @@
 
 /* Améliorations des couleurs pour le menu déroulant */
 .nav-item .dropdown-menu {
-    background-color: #f1c40f; /* Une teinte dorée plus douce */
+    background-color: #f1c40f;
+    /* Une teinte dorée plus douce */
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .dropdown-item {
-    color: #333; /* Couleur de texte plus sombre pour un meilleur contraste */
+    color: #333;
+    /* Couleur de texte plus sombre pour un meilleur contraste */
     padding: 10px 20px;
     transition: all 0.3s ease;
 }
 
 .dropdown-item:hover {
-    background-color: #f39c12; /* Un ton plus doré pour le survol */
+    background-color: #f39c12;
+    /* Un ton plus doré pour le survol */
     color: #fff;
 }
 
@@ -105,11 +108,13 @@
     }
 
     .navbar-brand img {
-        width: 40px; /* Réduction de la taille du logo */
+        width: 40px;
+        /* Réduction de la taille du logo */
     }
 
     .navbar-nav {
-        flex-direction: column; /* Disposition verticale */
+        flex-direction: column;
+        /* Disposition verticale */
         align-items: center;
         gap: 5px;
     }
@@ -118,14 +123,21 @@
         font-size: 0.9rem;
         padding: 0.5rem 1rem;
         text-align: center;
-        width: 100%; /* Étendre les liens sur toute la largeur */
+        width: 100%;
+        /* Étendre les liens sur toute la largeur */
     }
+
+    .sin-filtro {
+        display: none;
+    }
+
 }
 
 /* Pour les écrans très petits (moins de 576px) */
 @media (max-width: 576px) {
     .navbar-brand img {
-        width: 35px; /* Réduction supplémentaire du logo */
+        width: 35px;
+        /* Réduction supplémentaire du logo */
     }
 
     .navbar-nav {
