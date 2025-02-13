@@ -1,0 +1,199 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #dc3545;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    border-bottom: 5px solid #c82333;
+    margin-bottom: 50px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section img {
+    width: 180px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    color: #dc3545;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Content Section */
+.content-section {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.content-section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-section h4 {
+    font-size: 1.3rem;
+    color: #343a40;
+    margin-bottom: 15px;
+}
+
+.content-section p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Intro Section */
+.intro-section {
+    padding: 50px 15px;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.intro-section h4 {
+    font-size: 1.2rem;
+    color: #dc3545;
+    font-weight: bold;
+    text-align: center;
+}
+
+.intro-section p {
+    font-size: 0.95rem;
+    text-align: justify;
+}
+
+/* Responsive Layout */
+@media (max-width: 1200px) {
+    /* Écrans moyens */
+    .hero-section h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .content-section {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 991px) {
+    /* Tablettes et grands écrans */
+    .navbar-toggler {
+        display: block;
+    }
+
+    .intro-section {
+        padding: 30px 10px;
+    }
+
+    .content-section {
+        padding: 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Smartphones et petits écrans */
+    .hero-section {
+        padding: 80px 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-section p {
+        font-size: 0.95rem;
+    }
+
+    .content-section {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .intro-section h4 {
+        font-size: 1.1rem;
+    }
+
+    .intro-section p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Écrans très petits (ex : téléphones) */
+    .hero-section h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-section p {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .content-section h4 {
+        font-size: 1.2rem;
+    }
+
+    .content-section p {
+        font-size: 0.9rem;
+    }
+}
